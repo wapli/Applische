@@ -10,6 +10,13 @@ sellid.addEventListener("click", function(e){
  window.alert("選択しなおしてください");
 
 
+}else if(eventID[3]=="p"){
+    console.log(eventID[3]);
+    
+    var sl=e.target;
+    sl=window.prompt("教室名を入力");
+    e.target.innerHTML=sl;
+
 }
 
 else{
