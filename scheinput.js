@@ -6,8 +6,21 @@ var head=document.getElementById("head");
 sellid.addEventListener("click", function(e){
     var eventID=event.target.id;
     console.log(eventID);
+    if(eventID[3]=="e"){
+        var sl=0;
+        
 
-    if(eventID==="0-0"||eventID=="0-1"||eventID=="0-2"||eventID=="0-3"||eventID=="0-4"||eventID=="0-5"||eventID=="0-6"||eventID=="1-0"||eventID=="2-0"||eventID=="3-0"||eventID=="4-0"||eventID=="5-0"||eventID=="6-0"||eventID=="7-0"){
+    }
+    else{
+        sl=1;
+    }
+
+if(sl==0){
+    
+
+}
+else{
+ if(eventID==="0-0"||eventID=="0-1"||eventID=="0-2"||eventID=="0-3"||eventID=="0-4"||eventID=="0-5"||eventID=="0-6"||eventID=="1-0"||eventID=="2-0"||eventID=="3-0"||eventID=="4-0"||eventID=="5-0"||eventID=="6-0"||eventID=="7-0"){
  window.alert("選択しなおしてください");
 
 
@@ -36,4 +49,6 @@ else{
     window.alert("入力がキャンセルされました");
 }
 }
-});
+}
+}
+);
