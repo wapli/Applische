@@ -1,0 +1,8 @@
+#table{
+    background-color:rgba(230, 132, 132, 0.459) ;
+    color:rgb(41, 38, 34);
+    position: absolute;
+    table-layout: fixed;
+    width: 100%;
+    height:70%; 
+  }

@@ -3,6 +3,13 @@ var sell=table.getElementsByTagName("td");//table内のtd要素
 var head=document.getElementById("head");
 
 
+
+function changesytle(cssid,cssfile) {
+    document.getElementById(cssid).href = cssfile;
+ }//色を変えるための関数です
+ 
+
+
 sellid.addEventListener("click", function(e){
     var eventID=event.target.id;
     console.log(eventID);
