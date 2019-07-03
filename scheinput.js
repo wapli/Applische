@@ -1,9 +1,16 @@
-
+var editid=document.getElementById("edit");
 var sellid=document.getElementById("table");
 var head=document.getElementById("head");
 
+editid.addEventListener("click",function(e){
 
-sellid.addEventListener("click", function(e){
+    edit.input();
+    
+});
+
+var edit={
+    input:function(){
+        sellid.addEventListener("click", function(e){
     var eventID=event.target.id;
     console.log(eventID);
     if(eventID[3]=="e"){
@@ -50,5 +57,9 @@ else{
 }
 }
 }
-}
-);
+            }
+        );
+    }
+};
+
+
