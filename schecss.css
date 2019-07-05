@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/*吹き出し　はじめ*/
+/*「はじめ」「終わり」というつけ方がいいかどうかは要件等*/
+div.balloon{
+    position: absolute;/*吹き出しの位置に関しては今後調整する*/
+    width:300px;
+    margin:0 auto 40;
+    padding:20px;
+    background:#add;
+    text-align:cneter;
+    border-radius:20px;
+    border-top-left-radius: 4px;
+    z-index:1;
+}
+  div.balloon::before{
+    content:'';
+    position: absolute;
+    top:-28px;
+    left:5%;
+    margin-left:-14px;
+    border:14px solid transparent;
+    border-bottom-color:#add;
+  }
+
+/*吹き出し　終わり　*/
