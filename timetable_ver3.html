@@ -4,31 +4,41 @@
 
 <head>    
 
-    <meta charset="utf-8">
+        <meta charset="utf-8">
 
-    <title>wapli</title>
+        <title>wapli</title>
 
         <link rel="stylesheet" type="text/css"
         href="color/style.css" href="color/red.css" href="color/blue.css" 
-         href="color/green.css" id="colorstyle">
-        </script>
+                href="color/green.css" id="colorstyle">
 
+        <link rel="stylesheet" type="text/css" href="color/schecss.css">
 
+  
 </head>
 
 <body>
+        <!--吹き出し　表示する内容は暫定的なもの-->
+        <!--一度タップすると消えるようにしたいです　今は邪魔なのでコメントアウトしておきます
+        <div class="balloon">このボタンで講義名、講義教室を入力できます</div>
+        -->
+        <!--吹き出し終了-->
+
+        <!--色変更ボタン-->
         <select  onchange="changesytle('colorstyle',value);">
                 <option value="color/style.css">デフォルト</option>
                 <option value="color/red.css">赤色</option>
                <option value="color/blue.css">青色</option>
-               <option value="color/green.css">緑色</option>
-                               
-                               
+               <option value="color/green.css">緑色</option>          
         </select>
+        <!--色変更ボタン終了-->
+
+        <!--編集ボタン-->
         <p>
-                        <input type="button" value="編集" id="edit">
-                        </p>
-       
+        <input type="button" value="編集" id="edit">
+        </p>
+        <!--編集ボタン終了-->
+
 <table border="3" id ="table">
 
 
