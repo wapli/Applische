@@ -96,11 +96,34 @@ function enter(sella){
  }
  
  function a(num){
-     if(num==0){
+   
+   
+        //6限表示
+          if(num==0){
+             document.getElementById("6").style.visibility="visible"; 
+          
+       }
+       
+       //6限非表示
+          else if(num==1){
+              document.getElementById("6").style.visibility="collapse"; 
+          }
+          //7限表示
+          else if(num==2){
+              document.getElementById("7").style.visibility="visible"; 
+          
+          }
+          //7限非表示
+          else if(num==3){
+              document.getElementById("7").style.visibility="collapse"; 
+          }
+      
+     else if(num==4){
         
         document.getElementById("retu").style.visibility="collapse";
 
-     }else{
+     }
+     else{
          document.getElementById("retu").style.visibility="visible";
      }
- }
+    }
