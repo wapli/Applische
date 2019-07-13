@@ -94,10 +94,13 @@ function enter(sella){
      }
 
  }
-       
-
-
-
-    
+ 
+ function a(num){
+     if(num==0){
         
-      
+        document.getElementById("retu").style.visibility="collapse";
+
+     }else{
+         document.getElementById("retu").style.visibility="visible";
+     }
+ }
