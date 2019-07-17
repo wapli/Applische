@@ -13,8 +13,12 @@
                 href="color/green.css" id="colorstyle" >
 
         <link rel="stylesheet" type="text/css" href="color/schecss.css">
+<<<<<<< HEAD
 
         
+=======
+  
+>>>>>>> 9a2171d25a3f0ae02b3625e8e03b9fe147a6ad76
 </head>
 
 <body>
@@ -40,11 +44,26 @@
 
         <!--編集ボタン-->
         <p>
-        <input type="button" value="編集" id="edit">
+        <input type="button"  value="編集" id="edit">
+        <input type="button" value="完了" id="finish">
+        <input type="button" value="６限表示" onclick="a(0)"/>
+        <input type="button" value="６限非表示" onclick="a(1)"/>
+        <input type="button" value="７限表示" onclick="a(2)"/>
+        <input type="button" value="７限非表示" onclick="a(3)"/>
+        <input type="button" value="土曜日非表示" onclick="a(4)"/>
+        <input type="button" value="土曜日表示" onclick="a(5)"/>
         </p>
         <!--編集ボタン終了-->
 
 <table border="3" id ="table">
+
+        <colgroup>
+        <col span="6">
+        </colgroup>
+
+        <colgroup>
+        <col span="1" id="retu">
+        </colgroup>
 
 
  <tr>
@@ -115,11 +134,11 @@
 
                 <div id="2-4p" class="sell">場</div>       </td>
 
-        <td id="2-5">    <div id="2-5c"class="sell">講義</div> <hr>
+        <td id="2-5">    <div id="2-5c" class="sell">講義</div> <hr>
 
                 <div id="2-5p" class="sell">場</div>      </td>
 
-        <td id="2-6">    <div id="2-6c"class="sell">講義</div> <hr>
+        <td id="2-6">    <div id="2-6c" class="sell">講義</div> <hr>
 
                 <div id="2-6p" class="sell">場</div>      </td>
 
@@ -131,25 +150,25 @@
 
         <td id="3-1">     <div id="3-1c">講義</div> <hr>
 
-                <div id="3-1p"class="sell" >場</div>     </td>
+                <div id="3-1p" class="sell" >場</div>     </td>
 
-        <td id="3-2">     <div id="3-2c"class="sell">講義</div> <hr>
+        <td id="3-2">     <div id="3-2c" class="sell">講義</div> <hr>
 
                 <div id="3-2p" class="sell">場</div>     </td>
 
-        <td id="3-3">     <div id="3-3c"class="sell">講義</div> <hr>
+        <td id="3-3">     <div id="3-3c" class="sell">講義</div> <hr>
 
                 <div id="3-3p" class="sell">場</div>     </td>
 
-        <td id="3-4">    <div id="3-4c"class="sell">講義</div> <hr>
+        <td id="3-4">    <div id="3-4c" class="sell">講義</div> <hr>
 
-                <div id="3-4p"class="sell" >場</div>      </td>
+                <div id="3-4p" class="sell" >場</div>      </td>
 
-        <td id="3-5">    <div id="3-5c"class="sell">講義</div> <hr>
+        <td id="3-5">    <div id="3-5c" class="sell">講義</div> <hr>
 
                 <div id="3-5p" class="sell">場</div>      </td>
 
-        <td id="3-6">     <div id="3-6c"class="sell">講義</div> <hr>
+        <td id="3-6">     <div id="3-6c" class="sell">講義</div> <hr>
 
                 <div id="3-6p" class="sell">場</div>     </td>
 
@@ -163,23 +182,23 @@
 
                 <div id="4-1p" class="sell">場</div>     </td>
 
-        <td id="4-2">     <div id="4-2c"class="sell">講義</div> <hr>
+        <td id="4-2">     <div id="4-2c" class="sell">講義</div> <hr>
 
                 <div id="4-2p" class="sell">場</div>     </td>
 
-        <td id="4-3">     <div id="4-3c"class="sell">講義</div> <hr>
+        <td id="4-3">     <div id="4-3c" class="sell">講義</div> <hr>
 
                 <div id="4-3p" class="sell">場</div>     </td>
 
-        <td id="4-4">      <div id="4-4c"class="sell">講義</div> <hr>
+        <td id="4-4">      <div id="4-4c" class="sell">講義</div> <hr>
 
                 <div id="4-4p" class="sell">場</div>    </td>
 
-        <td id="4-5">     <div id="4-5c"class="sell">講義</div> <hr>
+        <td id="4-5">     <div id="4-5c" class="sell">講義</div> <hr>
 
                 <div id="4-5p" class="sell">場</div>     </td>
 
-        <td id="4-6">      <div id="4-6c"class="sell">講義</div> <hr>
+        <td id="4-6">      <div id="4-6c" class="sell">講義</div> <hr>
 
                 <div id="4-6p" class="sell">場</div>    </td>
 
@@ -202,21 +221,21 @@
 
                 <div id="5-3p" class="sell">場</div>     </td>
 
-        <td id="5-4">    <div id="5-4c"class="sell">講義</div> <hr>
+        <td id="5-4">    <div id="5-4c" class="sell">講義</div> <hr>
 
                 <div id="5-4p" class="sell">場</div>      </td>
 
-        <td id="5-5">    <div id="5-5c"class="sell">講義</div> <hr>
+        <td id="5-5">    <div id="5-5c" class="sell">講義</div> <hr>
 
                 <div id="5-5p" class="sell">場</div>      </td>
 
-        <td id="5-6">   <div id="5-6c"class="sell">講義</div> <hr>
+        <td id="5-6">   <div id="5-6c" class="sell">講義</div> <hr>
 
                 <div id="5-6p" class="sell">場</div>       </td>
 
 </tr>
 
-<tr>
+<tr id="6">
 
         <th id="6-0">6</th>
 
@@ -234,9 +253,9 @@
 
                 <div id="6-3p" class="sell">場</div>       </td>
 
-        <td id="6-4">   <div id="6-4c"class="sell">講義</div> <hr>
+        <td id="6-4">   <div id="6-4c" class="sell">講義</div> <hr>
 
-                <div id="6-4p"class="sell" >場</div>       </td>
+                <div id="6-4p" class="sell" >場</div>       </td>
 
         <td id="6-5">    <div id="6-5c" class="sell">講義</div> <hr>
 
@@ -248,7 +267,7 @@
 
 </tr>
 
-<tr>
+<tr id="7">
 
         <th id="7-0">7</th>
 
@@ -256,25 +275,25 @@
 
                 <div id="7-1p" class="sell">場</div>     </td>
 
-        <td id="7-2">     <div id="7-2c"class="sell">講義</div> <hr>
+        <td id="7-2">     <div id="7-2c" class="sell">講義</div> <hr>
 
                 <div id="7-2p" class="sell">場</div>     </td>
 
-        <td id="7-3">     <div id="7-3c"class="sell">講義</div> <hr>
+        <td id="7-3">     <div id="7-3c" class="sell">講義</div> <hr>
 
                 <div id="7-3p" class="sell">場</div>     </td>
 
-        <td id="7-4">     <div id="7-4c"class="sell">講義</div> <hr>
+        <td id="7-4">     <div id="7-4c" class="sell">講義</div> <hr>
 
                 <div id="7-4p" class="sell">場</div>     </td>
 
-        <td id="7-5">     <div id="7-5c"class="sell">講義</div> <hr>
+        <td id="7-5">     <div id="7-5c" class="sell">講義</div> <hr>
 
                 <div id="7-5p" class="sell">場</div>     </td>
 
-        <td id="7-6">     <div id="7-6c"class="sell">講義</div> <hr>
+        <td id="7-6">     <div id="7-6c" class="sell">講義</div> <hr>
 
-                <div id="7-6p"class="sell" >場</div>     </td>
+                <div id="7-6p" class="sell" >場</div>     </td>
 
 </tr>
 
@@ -291,7 +310,9 @@
 </body>
 
 <script type="text/javascript" src="timetable_ver3.js"></script>
-
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
 </html>
 
 <style>
