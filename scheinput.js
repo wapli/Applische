@@ -8,6 +8,12 @@ editid.addEventListener("click",function(e){
     
 });
 
+ function dispselect(){
+     
+ }
+
+ 
+
 var edit={
     input:function(){
         sellid.addEventListener("click", function(e){
@@ -58,7 +64,7 @@ else{
 }
 }
             }
-        );
+        ,false);
     }
 };
 

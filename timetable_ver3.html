@@ -10,11 +10,11 @@
 
         <link rel="stylesheet" type="text/css"
         href="color/style.css" href="color/red.css" href="color/blue.css" 
-                href="color/green.css" id="colorstyle">
+                href="color/green.css" id="colorstyle" >
 
         <link rel="stylesheet" type="text/css" href="color/schecss.css">
 
-  
+        
 </head>
 
 <body>
@@ -23,7 +23,12 @@
         <div class="balloon">このボタンで講義名、講義教室を入力できます</div>
         -->
         <!--吹き出し終了-->
-
+        
+        <div id="header-bk">
+                       
+        <div id="header"> <INPUT type="submit" name="ボタン名" value="表示したい文字" href="option.html">
+                <INPUT type="button" href="option.html" name="botan2" value="送信"></div>
+</div>
         <!--色変更ボタン-->
         <select  onchange="changesytle('colorstyle',value);">
                 <option value="color/style.css">デフォルト</option>
@@ -290,6 +295,20 @@
 </html>
 
 <style>
+/* ヘッダーの背景 */
+div#header-bk { 
+	background-color:rgb(144, 50, 156);  /* 背景色(黒) */
+	padding:10px 0 0;       /* 上から10px分余白をあける */
+	height:140px;           /* 縦の高さ140px */
+	width:100%;             /* 横の幅を100% */
+}
+/* ヘッダーの表示領域 */
+div#header { 
+	border: 5px solid #fff; /* 表示領域を白枠で囲う */
+	height: 120px;  /* 縦の表示領域120px */
+	width: 970px;   /* 横の幅970px */
+	margin: auto;   /* 中央揃え */
+}
 
 html, body{
 
