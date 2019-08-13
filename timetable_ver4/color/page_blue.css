@@ -1,0 +1,9 @@
+#a{
+    border: gray solid;
+background-color: #7cd5f8;
+color: black;
+position: absolute;
+table-layout: fixed;
+width: 100%;
+height:70%; 
+}
