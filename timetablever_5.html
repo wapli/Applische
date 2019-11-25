@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>統合</title>
+
+    <!-- CSS読み込み-->
+    <link rel="stylesheet" type="text/css" href="lib/onsenui/css/onsenui.css">
+  
+    <link rel="stylesheet" type="text/css" href="lib/onsenui/css/onsen-css-components.css">
+    <link rel="stylesheet" type="text/css" href="css/timetable.css">
+
+
+    <!-- <link rel="stylesheet" type="text/css"
+    href="color/style_８月７日修正.css" href="color/red.css" href="color/blue.css"
+     href="color/green.css" id="colorstyle"> -->
+
+
+
+    <!--JSライブラリ読み込み-->
+    <script type="text/javascript" src="lib/onsenui/js/onsenui.js"></script>
+
+
+    <script type="text/javascript" src="js/kanemotoyhooo!.js"></script>
+    <script type="text/javascript" src="js/timetable_ver5.js"></script>
+</head>
+
+<body>
+    <ons-page>
+        <ons-tabbar>
+            <ons-tab page="home.html" label="home" icon="home">
+              </ons-tab>
+            <ons-tab page="map.html" label="マップ" icon="map">
+            </ons-tab>
+              <ons-tab page="appsche.html" label="タイムテーブル" icon="clock">
+                </ons-tab>
+            </ons-tabbar>
+           
+      </ons-page>
+    
+
+    <template id="home.html">
+        <ons-page id="ons-home">
+          home
+        </ons-page>
+      </template>
+
+      <template id="map.html">
+          <ons-page id="ons-map">
+  map
+          </ons-page>
+        </template>
+
+  <template id="appsche.html">
+      <ons-page id="ons-appsche">
+
+
+
+
+
+
+          
+
+<!-- ここから各ページ -->
+            <template id="lecturePage0">
+              <ons-page id="ons-lecturePage0">
+                <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                  <div class="left">
+                    <ons-back-button>戻る</ons-back-button>
+                  </div>
+                  <div class="center">講義０</div>
+                </ons-toolbar>
+                <ons-list>
+                    <ons-list-header>記録</ons-list-header>
+                    <ons-list-item tappable><div>出欠</div></ons-list-item>
+                    <ons-list-item tappable><div>メモ</div></ons-list-item>
+                  <ons-list-header>リンク</ons-list-header>
+                  <ons-list-item tappable><div>シラバス</div></ons-list-item>
+                  <ons-list-item tappable><div >e-class</div></ons-list-item>
+                  <ons-list-header>授業情報</ons-list-header>
+                  <ons-list-item tappable><div>評価基準</div></ons-list-item>
+                  <ons-list-header>授業連絡</ons-list-header>
+                  <ons-list-item tappable><div>休講情報</div></ons-list-item>
+                  
+                </ons-list>
+              </ons-page>
+            </template>
+            <template id="lecturePage1">
+                <ons-page id="ons-lecturePage1">
+                  <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                    <div class="left">
+                      <ons-back-button>戻る</ons-back-button>
+                    </div>
+                    <div class="center">講義１</div>
+                  </ons-toolbar>
+                 
+  
+                </ons-page>
+              </template>
+              <template id="lecturePage2">
+                  <ons-page id="ons-lecturePage2">
+                    <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                      <div class="left">
+                        <ons-back-button>戻る</ons-back-button>
+                      </div>
+                      <div class="center">講義２</div>
+                    </ons-toolbar>
+                   
+    
+                  </ons-page>
+                </template>
+                <template id="lecturePage3">
+                    <ons-page id="ons-lecturePage3">
+                      <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                        <div class="left">
+                          <ons-back-button>戻る</ons-back-button>
+                        </div>
+                        <div class="center">講義３</div>
+                      </ons-toolbar>
+                     
+      
+                    </ons-page>
+                  </template>
+                  <template id="lecturePage4">
+                      <ons-page id="ons-lecturePage4">
+                        <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                          <div class="left">
+                            <ons-back-button>戻る</ons-back-button>
+                          </div>
+                          <div class="center">講義４</div>
+                        </ons-toolbar>
+                       
+        
+                      </ons-page>
+                    </template>
+                    <template id="lecturePage5">
+                        <ons-page id="ons-lecturePage5">
+                          <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                            <div class="left">
+                              <ons-back-button>戻る</ons-back-button>
+                            </div>
+                            <div class="center">講義５</div>
+                          </ons-toolbar>
+                         
+          
+                        </ons-page>
+                      </template>
+                      <template id="lecturePage6">
+                          <ons-page id="ons-lecturePage6">
+                            <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                              <div class="left">
+                                <ons-back-button>戻る</ons-back-button>
+                              </div>
+                              <div class="center">講義６</div>
+                            </ons-toolbar>
+                           
+            
+                          </ons-page>
+                        </template>
+                        <template id="lecturePage7">
+                            <ons-page id="ons-lecturePage7">
+                              <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                <div class="left">
+                                  <ons-back-button>戻る</ons-back-button>
+                                </div>
+                                <div class="center">講義７</div>
+                              </ons-toolbar>
+                             
+              
+                            </ons-page>
+                          </template>
+                          <template id="lecturePage8">
+                              <ons-page id="ons-lecturePage8">
+                                <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                  <div class="left">
+                                    <ons-back-button>戻る</ons-back-button>
+                                  </div>
+                                  <div class="center">講義８</div>
+                                </ons-toolbar>
+                               
+                
+                              </ons-page>
+                            </template> <template id="lecturePage9">
+                                <ons-page id="ons-lecturePage9">
+                                  <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                    <div class="left">
+                                      <ons-back-button>戻る</ons-back-button>
+                                    </div>
+                                    <div class="center">講義９</div>
+                                  </ons-toolbar>
+                                 
+                  
+                                </ons-page>
+                              </template> <template id="lecturePage10">
+              <ons-page id="ons-lecturePage10">
+                <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                  <div class="left">
+                    <ons-back-button>戻る</ons-back-button>
+                  </div>
+                  <div class="center">講義１０</div>
+                </ons-toolbar>
+               
+
+              </ons-page>
+            </template> <template id="lecturePage11">
+                <ons-page id="ons-lecturePage11">
+                  <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                    <div class="left">
+                      <ons-back-button>戻る</ons-back-button>
+                    </div>
+                    <div class="center">講義１１</div>
+                  </ons-toolbar>
+                 
+  
+                </ons-page>
+              </template> <template id="lecturePage12">
+              <ons-page id="ons-lecturePage12">
+                <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                  <div class="left">
+                    <ons-back-button>戻る</ons-back-button>
+                  </div>
+                  <div class="center">講義１２</div>
+                </ons-toolbar>
+               
+
+              </ons-page>
+            </template> <template id="lecturePage13">
+              <ons-page id="ons-lecturePage13">
+                <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                  <div class="left">
+                    <ons-back-button>戻る</ons-back-button>
+                  </div>
+                  <div class="center">講義１３</div>
+                </ons-toolbar>
+               
+
+              </ons-page>
+            </template>
+            <template id="lecturePage14">
+                <ons-page id="ons-lecturePage14">
+                  <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                    <div class="left">
+                      <ons-back-button>戻る</ons-back-button>
+                    </div>
+                    <div class="center">講義１４</div>
+                  </ons-toolbar>
+                 
+  
+                </ons-page>
+              </template>
+              <template id="lecturePage15">
+                  <ons-page id="ons-lecturePage15">
+                    <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                      <div class="left">
+                        <ons-back-button>戻る</ons-back-button>
+                      </div>
+                      <div class="center">講義１５</div>
+                    </ons-toolbar>
+                   
+    
+                  </ons-page>
+                </template>
+                <template id="lecturePage16">
+                    <ons-page id="ons-lecturePage16">
+                      <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                        <div class="left">
+                          <ons-back-button>戻る</ons-back-button>
+                        </div>
+                        <div class="center">講義１６</div>
+                      </ons-toolbar>
+                     
+      
+                    </ons-page>
+                  </template>
+                  <template id="lecturePage17">
+                      <ons-page id="ons-lecturePage17">
+                        <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                          <div class="left">
+                            <ons-back-button>戻る</ons-back-button>
+                          </div>
+                          <div class="center">講義１７</div>
+                        </ons-toolbar>
+                       
+        
+                      </ons-page>
+                    </template>
+                    <template id="lecturePage18">
+                        <ons-page id="ons-lecturePage18">
+                          <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                            <div class="left">
+                              <ons-back-button>戻る</ons-back-button>
+                            </div>
+                            <div class="center">講義１８</div>
+                          </ons-toolbar>
+                         
+          
+                        </ons-page>
+                      </template>
+                      <template id="lecturePage19">
+                          <ons-page id="ons-lecturePage19">
+                            <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                              <div class="left">
+                                <ons-back-button>戻る</ons-back-button>
+                              </div>
+                              <div class="center">講義１９</div>
+                            </ons-toolbar>
+                           
+            
+                          </ons-page>
+                        </template>
+                        <template id="lecturePage20">
+                            <ons-page id="ons-lecturePage20">
+                              <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                <div class="left">
+                                  <ons-back-button>戻る</ons-back-button>
+                                </div>
+                                <div class="center">講義２０</div>
+                              </ons-toolbar>
+                             
+              
+                            </ons-page>
+                          </template>
+                          <template id="lecturePage21">
+                              <ons-page id="ons-lecturePage21">
+                                <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                  <div class="left">
+                                    <ons-back-button>戻る</ons-back-button>
+                                  </div>
+                                  <div class="center">講義２１</div>
+                                </ons-toolbar>
+                               
+                
+                              </ons-page>
+                            </template>
+                            <template id="lecturePage22">
+                                <ons-page id="ons-lecturePage22">
+                                  <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                    <div class="left">
+                                      <ons-back-button>戻る</ons-back-button>
+                                    </div>
+                                    <div class="center">講義２２</div>
+                                  </ons-toolbar>
+                                 
+                  
+                                </ons-page>
+                              </template>
+                              <template id="lecturePage23">
+                                  <ons-page id="ons-lecturePage23">
+                                    <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                      <div class="left">
+                                        <ons-back-button>戻る</ons-back-button>
+                                      </div>
+                                      <div class="center">講義２３</div>
+                                    </ons-toolbar>
+                                   
+                    
+                                  </ons-page>
+                                </template>
+                                <template id="lecturePage24">
+                                    <ons-page id="ons-lecturePage24">
+                                      <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                        <div class="left">
+                                          <ons-back-button>戻る</ons-back-button>
+                                        </div>
+                                        <div class="center">講義２４</div>
+                                      </ons-toolbar>
+                                     
+                      
+                                    </ons-page>
+                                  </template>
+                                  <template id="lecturePage25">
+                                      <ons-page id="ons-lecturePage25">
+                                        <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                          <div class="left">
+                                            <ons-back-button>戻る</ons-back-button>
+                                          </div>
+                                          <div class="center">講義２５</div>
+                                        </ons-toolbar>
+                                       
+                        
+                                      </ons-page>
+                                    </template>
+                                    <template id="lecturePage26">
+                                        <ons-page id="ons-lecturePage26">
+                                          <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                            <div class="left">
+                                              <ons-back-button>戻る</ons-back-button>
+                                            </div>
+                                            <div class="center">講義２６</div>
+                                          </ons-toolbar>
+                                         
+                          
+                                        </ons-page>
+                                      </template>
+                                      <template id="lecturePage27">
+                                          <ons-page id="ons-lecturePage27">
+                                            <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                              <div class="left">
+                                                <ons-back-button>戻る</ons-back-button>
+                                              </div>
+                                              <div class="center">講義２７</div>
+                                            </ons-toolbar>
+                                           
+                            
+                                          </ons-page>
+                                        </template>
+                                        <template id="lecturePage28">
+                                            <ons-page id="ons-lecturePage28">
+                                              <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                                <div class="left">
+                                                  <ons-back-button>戻る</ons-back-button>
+                                                </div>
+                                                <div class="center">講義２８</div>
+                                              </ons-toolbar>
+                                             
+                              
+                                            </ons-page>
+                                          </template>
+                                          <template id="lecturePage29">
+                                              <ons-page id="ons-lecturePage29">
+                                                <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                                  <div class="left">
+                                                    <ons-back-button>戻る</ons-back-button>
+                                                  </div>
+                                                  <div class="center">講義２９</div>
+                                                </ons-toolbar>
+                                               
+                                
+                                              </ons-page>
+                                            </template>
+                                            <template id="lecturePage30">
+                                                <ons-page id="ons-lecturePage30">
+                                                  <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                                    <div class="left">
+                                                      <ons-back-button>戻る</ons-back-button>
+                                                    </div>
+                                                    <div class="center">講義３０</div>
+                                                  </ons-toolbar>
+                                                 
+                                  
+                                                </ons-page>
+                                              </template>
+                                              <template id="lecturePage31">
+                                                  <ons-page id="ons-lecturePage31">
+                                                    <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                                      <div class="left">
+                                                        <ons-back-button>戻る</ons-back-button>
+                                                      </div>
+                                                      <div class="center">講義３１</div>
+                                                    </ons-toolbar>
+                                                   
+                                    
+                                                  </ons-page>
+                                                </template>
+                                                <template id="lecturePage32">
+                                                    <ons-page id="ons-lecturePage32">
+                                                      <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                                        <div class="left">
+                                                          <ons-back-button>戻る</ons-back-button>
+                                                        </div>
+                                                        <div class="center">講義３２</div>
+                                                      </ons-toolbar>
+                                                     
+                                      
+                                                    </ons-page>
+                                                  </template>
+                                                  <template id="lecturePage33">
+                                                      <ons-page id="ons-lecturePage33">
+                                                        <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                                          <div class="left">
+                                                            <ons-back-button>戻る</ons-back-button>
+                                                          </div>
+                                                          <div class="center">講義３３</div>
+                                                        </ons-toolbar>
+                                                       
+                                        
+                                                      </ons-page>
+                                                    </template>
+                                                    <template id="lecturePage34">
+                                                        <ons-page id="ons-lecturePage34">
+                                                          <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                                            <div class="left">
+                                                              <ons-back-button>戻る</ons-back-button>
+                                                            </div>
+                                                            <div class="center">講義３４</div>
+                                                          </ons-toolbar>
+                                                         
+                                          
+                                                        </ons-page>
+                                                      </template>
+                                                      <template id="lecturePage35">
+                                                          <ons-page id="ons-lecturePage35">
+                                                            <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                                              <div class="left">
+                                                                <ons-back-button>戻る</ons-back-button>
+                                                              </div>
+                                                              <div class="center">講義３５</div>
+                                                            </ons-toolbar>
+                                                           
+                                            
+                                                          </ons-page>
+                                                        </template>
+                                                        <template id="lecturePage36">
+                                                            <ons-page id="ons-lecturePage36">
+                                                              <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                                                <div class="left">
+                                                                  <ons-back-button>戻る</ons-back-button>
+                                                                </div>
+                                                                <div class="center">講義３６</div>
+                                                              </ons-toolbar>
+                                                             
+                                              
+                                                            </ons-page>
+                                                          </template>
+                                                          <template id="lecturePage37">
+                                                              <ons-page id="ons-lecturePage37">
+                                                                <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                                                  <div class="left">
+                                                                    <ons-back-button>戻る</ons-back-button>
+                                                                  </div>
+                                                                  <div class="center">講義３７</div>
+                                                                </ons-toolbar>
+                                                               
+                                                
+                                                              </ons-page>
+                                                            </template>
+                                                            <template id="lecturePage38">
+                                                                <ons-page id="ons-lecturePage38">
+                                                                  <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                                                    <div class="left">
+                                                                      <ons-back-button>戻る</ons-back-button>
+                                                                    </div>
+                                                                    <div class="center">講義３８</div>
+                                                                  </ons-toolbar>
+                                                                 
+                                                  
+                                                                </ons-page>
+                                                              </template>
+                                                              <template id="lecturePage39">
+                                                                  <ons-page id="ons-lecturePage39">
+                                                                    <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                                                      <div class="left">
+                                                                        <ons-back-button>戻る</ons-back-button>
+                                                                      </div>
+                                                                      <div class="center">講義３９</div>
+                                                                    </ons-toolbar>
+                                                                   
+                                                    
+                                                                  </ons-page>
+                                                                </template>
+                                                                <template id="lecturePage40">
+                                                                    <ons-page id="ons-lecturePage40">
+                                                                      <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                                                        <div class="left">
+                                                                          <ons-back-button>戻る</ons-back-button>
+                                                                        </div>
+                                                                        <div class="center">講義４０</div>
+                                                                      </ons-toolbar>
+                                                                     
+                                                      
+                                                                    </ons-page>
+                                                                  </template>
+                                                                  <template id="lecturePage41">
+                                                                      <ons-page id="ons-lecturePage41">
+                                                                        <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
+                                                                          <div class="left">
+                                                                            <ons-back-button>戻る</ons-back-button>
+                                                                          </div>
+                                                                          <div class="center">講義４１</div>
+                                                                        </ons-toolbar>
+                                                                       </ons-page>
+                                                                       </template>
+                                                        
+
+                                                                
+
+<!-- ここまで各ページ -->
+
+            
+                 
+
+               
+                  <!-- 講義の表 -->
+                  
+
+                        
+           /toolbarのコード
+           
+      
+<ons-navigator  id="home.html"> </ons-navigator>
+ <ons-page id="lecture"> 
+
+  <ons-splitter id="home.html">
+  <ons-splitter-side itter-side id="menu" side="left" width="220px" collapse swipeable swipe-target-width="50px">
+    <ons-page id="lecture">
+          <ons-list>
+            <ons-list-item onclick="fn.load('home.html')" tappable>
+              設定
+            </ons-list-item>
+            </ons-list>
+            </ons-page>
+    </ons-splitter-side>
+    <ons-splitter-content id="content" page="home.html"></ons-splitter-content>
+</ons-splitter>
+
+
+ 
+<ons-toolbar id="home.html">
+    <div class="left">
+    <ons-toolbar-button onclick="fn.open()">
+      <ons-icon icon="md-menu"></ons-icon>
+    </ons-toolbar-button>
+    </div>
+  <div class="center">
+      講義
+  </div>
+</ons-toolbar>
+
+       
+
+                  
+                    <table border="1" id="homr.html" class='table'>
+
+                        <tr>
+       
+                            <th id="0-0"></th>
+                    
+                            <th id="0-1"  class="day">月</th>
+                    
+                            <th id="0-2"  class="day">火</th>
+                    
+                            <th id="0-3"  class="day">水</th>
+                    
+                            <th id="0-4"  class="day">木</th>
+                    
+                            <th id="0-5"  class="day">金</th>
+                    
+                            <th id="0-6"  class="day">土</th>
+                    
+                    </tr>
+                    
+<!-- 一限目 -->
+                    <tr>
+                        <th class="one-lecture"> 1</th>
+                
+                        <td id="1-1" class="a" >  <div id="1-1c" class="sell ">講義</div> <hr>
+                
+                                <div id="1-1p" class=sell>場</div>     </td>
+                                
+                        <td id="1-2" class="a">   <div id="1-2c" class="sell">講義</div> <hr>
+                
+                        <div id="1-2p" class="sell" >場</div>   
+                        </td>
+                
+                        <td id="1-3" class="a">    <div id="1-3c" class="sell">講義</div> <hr>
+                
+                        <div id="1-3p" class="sell" >場</div>    
+                        
+                   </td>
+                
+                        <td id="1-4" class="a">     <div id="1-4c" class="sell">講義</div> <hr>
+                
+                        <div id="1-4p" class="sell">場</div>     </td>
+                
+                        <td id="1-5" class="a">    <div id="1-5c" class="sell">講義</div> <hr>
+                
+                        <div id="1-5p" class="sell">場</div>      </td>
+                
+                        <td id="1-6" class="a">     <div id="1-6c" class="sell">講義</div> <hr>
+                
+                        <div id="1-6p" class="sell">場</div>     </td>
+                
+                    </tr>
+                
+                <tr>
+
+                    <tr>
+       
+                        <th id="2-0"> 2</th>
+                
+                        <td id="2-1" class="a">  <div id="2-1c" class="sell">講義</div> <hr>
+                
+                                <div id="2-1p" class="sell">場</div>        </td>
+                
+                        <td id="2-2" class="a">   <div id="2-2c" class="sell">講義</div> <hr>
+                
+                                <div id="2-2p" class="sell" >場</div>       </td>
+                
+                        <td id="2-3" class="a">   <div id="2-3c" class="sell">講義</div> <hr>
+                
+                                <div id="2-3p" class="sell">場</div>       </td>
+                
+                        <td id="2-4" class="a">   <div id="2-4c" class="sell">講義</div> <hr>
+                
+                                <div id="2-4p" class="sell">場</div>       </td>
+                
+                        <td id="2-5" class="a">    <div id="2-5c" class="sell">講義</div> <hr>
+                
+                                <div id="2-5p" class="sell">場</div>      </td>
+                
+                        <td id="2-6" class="a">    <div id="2-6c" class="sell">講義</div> <hr>
+                
+                                <div id="2-6p" class="sell">場</div>      </td>
+                
+                </tr>
+                
+                <tr>
+                
+                        <th id="3-0"> 3</th>
+                
+                        <td id="3-1" class="a">     <div id="3-1c" class="sell">講義</div> <hr>
+                
+                                <div id="3-1p" class="sell" >場</div>     </td>
+                
+                        <td id="3-2" class="a">     <div id="3-2c" class="sell">講義</div> <hr>
+                
+                                <div id="3-2p" class="sell">場</div>     </td>
+                
+                        <td id="3-3" class="a">     <div id="3-3c" class="sell">講義</div> <hr>
+                
+                                <div id="3-3p" class="sell">場</div>     </td>
+                
+                        <td id="3-4" class="a">    <div id="3-4c" class="sell">講義</div> <hr>
+                
+                                <div id="3-4p" class="sell" >場</div>      </td>
+                
+                        <td id="3-5" class="a">    <div id="3-5c" class="sell">講義</div> <hr>
+                
+                                <div id="3-5p" class="sell">場</div>      </td>
+                
+                        <td id="3-6" class="a">     <div id="3-6c" class="sell">講義</div> <hr>
+                
+                                <div id="3-6p" class="sell">場</div>     </td>
+                
+                </tr>
+                
+                <tr>
+                
+                        <th id="4-0"> 4</th>
+                
+                        <td id="4-1"class="a">     <div id="4-1c" class="sell">講義</div> <hr>
+                
+                                <div id="4-1p" class="sell">場</div>     </td>
+                
+                        <td id="4-2" class="a">     <div id="4-2c" class="sell">講義</div> <hr>
+                
+                                <div id="4-2p" class="sell">場</div>     </td>
+                
+                        <td id="4-3" class="a">     <div id="4-3c" class="sell">講義</div> <hr>
+                
+                                <div id="4-3p" class="sell">場</div>     </td>
+                
+                        <td id="4-4" class="a">      <div id="4-4c" class="sell">講義</div> <hr>
+                
+                                <div id="4-4p" class="sell">場</div>    </td>
+                
+                        <td id="4-5" class="a">     <div id="4-5c" class="sell">講義</div> <hr>
+                
+                                <div id="4-5p" class="sell">場</div>     </td>
+                
+                        <td id="4-6" class="a">      <div id="4-6c" class="sell">講義</div> <hr>
+                
+                                <div id="4-6p" class="sell">場</div>    </td>
+                
+                </tr>
+                
+                <tr>
+                
+                        <th id="5-0">5</th>
+                
+                        <td id="5-1"class="a">      <div id="5-1c" class="sell">講義</div> <hr>
+                
+                                <div id="5-1p" class="sell">場</div>    </td>
+                
+                        <td id="5-2" class="a">     <div id="5-2c" class="sell">講義</div> <hr>
+                               
+                
+                                <div id="5-2p" class="sell">場</div>     </td>
+                
+                        <td id="5-3" class="a">     <div id="5-3c" class="sell">講義</div> <hr>
+                
+                                <div id="5-3p" class="sell">場</div>     </td>
+                
+                        <td id="5-4" class="a">    <div id="5-4c" class="sell">講義</div> <hr>
+                
+                                <div id="5-4p" class="sell">場</div>      </td>
+                
+                        <td id="5-5" class="a">    <div id="5-5c" class="sell">講義</div> <hr>
+                
+                                <div id="5-5p" class="sell">場</div>      </td>
+                
+                        <td id="5-6" class="a">   <div id="5-6c" class="sell">講義</div> <hr>
+                
+                                <div id="5-6p" class="sell">場</div>       </td>
+                
+                </tr>
+                
+                <tr>
+                
+                        <th id="6-0">6</th>
+                
+                        <td id="6-1" class="a">
+                
+                                        <div id="6-1c" class="sell">講義</div> <hr>
+                
+                                        <div id="6-1p" class="sell">場</div>         </td>
+                
+                        <td id="6-2" class="a">    <div id="6-2c" class="sell">講義</div> <hr>
+                
+                                <div id="6-2p" class="sell">場</div>         </td>
+                
+                        <td id="6-3" class="a">   <div id="6-3c" class="sell">講義</div>   <hr>
+                
+                                <div id="6-3p" class="sell">場</div>       </td>
+                
+                        <td id="6-4" class="a">   <div id="6-4c"class="sell">講義</div> <hr>
+                
+                                <div id="6-4p" class="sell" >場</div>       </td>
+                
+                        <td id="6-5" class="a">    <div id="6-5c" class="sell">講義</div> <hr>
+                
+                                <div id="6-5p" class="sell">場</div>      </td>
+                
+                        <td id="6-6" class="a">     <div id="6-6c" class="sell">講義</div> <hr>
+                
+                                <div id="6-6p" class="sell">場</div>     </td>
+                
+                </tr>
+                
+                <tr>
+                
+                        <th id="7-0">7</th>
+                
+                        <td id="7-1" class="a">     <div id="7-1c" class="sell">講義</div> <hr>
+                
+                                <div id="7-1p" class="sell">場</div>     </td>
+                
+                        <td id="7-2" class="a">     <div id="7-2c" class="sell">講義</div> <hr>
+                
+                                <div id="7-2p" class="sell">場</div>     </td>
+                
+                        <td id="7-3" class="a">     <div id="7-3c" class="sell">講義</div> <hr>
+                
+                                <div id="7-3p" class="sell">場</div>     </td>
+                
+                        <td id="7-4" class="a">     <div id="7-4c" class="sell">講義</div> <hr>
+                
+                                <div id="7-4p" class="sell">場</div>     </td>
+                
+                        <td id="7-5" class="a">     <div id="7-5c" class="sell">講義</div> <hr>
+                
+                                <div id="7-5p" class="sell">場</div>     </td>
+                
+                        <td id="7-6" class="a">     <div id="7-6c" class="sell">講義</div> <hr>
+                
+                                <div id="7-6p" class="sell" >場</div>     </td>
+                
+                </tr>
+               </table>
+     
+        </ons-page>
+
+      </template>
+ 
+</body>
+
+</html>
