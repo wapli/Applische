@@ -64,6 +64,7 @@
           
 
 <!-- ここから各ページ -->
+
             <template id="lecturePage0">
               <ons-page id="ons-lecturePage0">
                 <ons-toolbar width="100%" style="background-color:rgb(255, 255, 254);">
@@ -86,6 +87,7 @@
                   
                 </ons-list>
               </ons-page>
+
             </template>
             <template id="lecturePage1">
                 <ons-page id="ons-lecturePage1">
@@ -572,8 +574,7 @@
                                                                         </ons-toolbar>
                                                                        </ons-page>
                                                                        </template>
-                                                        
-
+                                                                     
                                                                 
 
 <!-- ここまで各ページ -->
@@ -586,28 +587,49 @@
                   
 
                         
-           /toolbarのコード
-           
-      
-<ons-navigator  id="home.html"> </ons-navigator>
- <ons-page id="lecture"> 
-
-  <ons-splitter id="home.html">
+        
+  <!--<template>は機能が用いられるまで中身が現れないので、初期状態で見れるのはメニューバーのみ。
+    メニューバーをクリックされて初めて、<template>の中身が現れる-->
+  <ons-splitter>
   <ons-splitter-side itter-side id="menu" side="left" width="220px" collapse swipeable swipe-target-width="50px">
     <ons-page id="lecture">
           <ons-list>
-            <ons-list-item onclick="fn.load('home.html')" tappable>
+            <ons-list-item onclick="fn.load('appsche.html')" tappable>
               設定
             </ons-list-item>
+            <div>
+                <ons-list-item >
+                    設定
+                  </ons-list-item>
+            </div>
             </ons-list>
             </ons-page>
     </ons-splitter-side>
-    <ons-splitter-content id="content" page="home.html"></ons-splitter-content>
-</ons-splitter>
-
-
+    <ons-splitter-content id="content" page="ons-appsche.html"></ons-splitter-content>
+</ons-splitter>      
+ </ons-page>
+</template>
  
-<ons-toolbar id="home.html">
+    <template id="settings.html">
+    <ons-page >
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          Settings
+        </div>
+      </ons-toolbar>
+    </ons-page>
+  </template>
+
+  
+
+<template  id="ons-appsche.html">
+    <ons-page id="ons-appsche">
+<ons-toolbar>
     <div class="left">
     <ons-toolbar-button onclick="fn.open()">
       <ons-icon icon="md-menu"></ons-icon>
@@ -617,11 +639,17 @@
       講義
   </div>
 </ons-toolbar>
+  
 
-       
 
-                  
-                    <table border="1" id="homr.html" class='table'>
+
+
+ 
+<!--<ons-navigator>は画面遷移みの為、時間割表をクリックしたときに画面遷移する様にしたかったので用いた-->
+<ons-navigator id="lecture">
+    <ons-page id="lecture">
+
+                    <table border="1" width="100%"  id="ons-appsche.html" class='table'>
 
                         <tr>
        
@@ -677,11 +705,11 @@
                 <tr>
 
                     <tr>
-       
+        
                         <th id="2-0"> 2</th>
                 
                         <td id="2-1" class="a">  <div id="2-1c" class="sell">講義</div> <hr>
-                
+              
                                 <div id="2-1p" class="sell">場</div>        </td>
                 
                         <td id="2-2" class="a">   <div id="2-2c" class="sell">講義</div> <hr>
@@ -705,7 +733,7 @@
                                 <div id="2-6p" class="sell">場</div>      </td>
                 
                 </tr>
-                
+
                 <tr>
                 
                         <th id="3-0"> 3</th>
@@ -859,7 +887,12 @@
                 
                 </tr>
                </table>
-     
+              </div>
+
+            </ons-page>
+            </ons-navigator> 
+
+         
         </ons-page>
 
       </template>
