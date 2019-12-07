@@ -1,0 +1,40 @@
+#ons-lecture{
+    width:100%;
+    height:100%;
+}
+
+#table{
+    width:100%;
+    height:100%;
+    border-radius:5px;
+    border-color:black;
+    position: absolute;;
+}
+.sell{
+    width:100%;
+    height:100%;
+    
+}
+
+.memoContent{
+    width:50vh;
+    height:5vh;
+    position:relative;
+}
+.memoContent:hover{
+    background-color: khaki;
+}
+
+.memoTable{
+    width:80vh;
+    height:10vh;
+    background-color: rgb(200, 255, 255);
+    position:relative;
+    left: 50vw;
+    top:-10vh;
+}
+
+.saveMemo{
+    position:relative;
+
+}
