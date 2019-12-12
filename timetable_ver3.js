@@ -93,10 +93,10 @@ else{
       
           else if(num==4){
         
-        document.getElementById("retu").style.visibility="collapse";
+        document.getElementsByclassname("sat").style.visibility="collapse";
 
           }
           else{
-         document.getElementById("retu").style.visibility="visible";
+         document.getElementsclassname("sat").style.visibility="visible";
           }
              }
