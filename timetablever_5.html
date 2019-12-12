@@ -25,6 +25,7 @@
 
     <script type="text/javascript" src="js/kanemotoyhooo!.js"></script>
     <script type="text/javascript" src="js/timetable_ver5.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 
 <body>
@@ -594,14 +595,22 @@
   <ons-splitter-side itter-side id="menu" side="left" width="220px" collapse swipeable swipe-target-width="50px">
     <ons-page id="lecture">
           <ons-list>
-            <ons-list-item onclick="fn.load('settings.html')" tappable>
-              設定
+            <div class="cp_actab">
+              <input id="tab-one" type="checkbox" name="tabs">
+              <label for="tab-one">設定</label>
+              <div class="cp_actab-content">
+              <input type="button" value="6限非表示" onclick="aaa(1)">
+              <input type="button" value="6限表示" onclick="aaa(0)">
+              <input type="button" value="7限非表示" onclick="aaa(3)">
+              <input type="button" value="7限表示" onclick="aaa(2)">
+              <input type="button" value="土曜非表示" onclick="aaa(4)">
+              </div>
+              </div>
+          
+            <ons-list-item onclick="fn.load('appsche.html')" tappable>
+              講義
             </ons-list-item>
-            <div>
-                <ons-list-item >
-                    設定
-                  </ons-list-item>
-            </div>
+           
             </ons-list>
             </ons-page>
     </ons-splitter-side>
@@ -649,7 +658,7 @@
 <ons-navigator id="lecture">
     <ons-page id="lecture">
 
-                    <table border="1" width="100%"  id="ons-appsche.html" class='table'>
+                    <table border="1" width="100%" id="ons-appsche.html" class='table'>
 
                         <tr>
        
@@ -665,7 +674,7 @@
                     
                             <th id="0-5"  class="day">金</th>
                     
-                            <th id="0-6"  class="day">土</th>
+                            <th id="0-6"  class="day sat">土</th>
                     
                     </tr>
                     
@@ -696,7 +705,7 @@
                 
                         <div id="1-5p" class="sell">場</div>      </td>
                 
-                        <td id="1-6" class="a">     <div id="1-6c" class="sell">講義</div> <hr>
+                        <td id="1-6" class="a sat">     <div id="1-6c" class="sell">講義</div> <hr>
                 
                         <div id="1-6p" class="sell">場</div>     </td>
                 
@@ -728,7 +737,7 @@
                 
                                 <div id="2-5p" class="sell">場</div>      </td>
                 
-                        <td id="2-6" class="a">    <div id="2-6c" class="sell">講義</div> <hr>
+                        <td id="2-6" class="a sat">    <div id="2-6c" class="sell">講義</div> <hr>
                 
                                 <div id="2-6p" class="sell">場</div>      </td>
                 
@@ -758,7 +767,7 @@
                 
                                 <div id="3-5p" class="sell">場</div>      </td>
                 
-                        <td id="3-6" class="a">     <div id="3-6c" class="sell">講義</div> <hr>
+                        <td id="3-6" class="a sat">     <div id="3-6c" class="sell">講義</div> <hr>
                 
                                 <div id="3-6p" class="sell">場</div>     </td>
                 
@@ -788,7 +797,7 @@
                 
                                 <div id="4-5p" class="sell">場</div>     </td>
                 
-                        <td id="4-6" class="a">      <div id="4-6c" class="sell">講義</div> <hr>
+                        <td id="4-6" class="a sat">      <div id="4-6c" class="sell">講義</div> <hr>
                 
                                 <div id="4-6p" class="sell">場</div>    </td>
                 
@@ -819,13 +828,13 @@
                 
                                 <div id="5-5p" class="sell">場</div>      </td>
                 
-                        <td id="5-6" class="a">   <div id="5-6c" class="sell">講義</div> <hr>
+                        <td id="5-6" class="a sat">   <div id="5-6c" class="sell">講義</div> <hr>
                 
                                 <div id="5-6p" class="sell">場</div>       </td>
                 
                 </tr>
                 
-                <tr>
+                <tr id="6hide">
                 
                         <th id="6-0">6</th>
                 
@@ -851,13 +860,13 @@
                 
                                 <div id="6-5p" class="sell">場</div>      </td>
                 
-                        <td id="6-6" class="a">     <div id="6-6c" class="sell">講義</div> <hr>
+                        <td id="6-6" class="a sat">     <div id="6-6c" class="sell">講義</div> <hr>
                 
                                 <div id="6-6p" class="sell">場</div>     </td>
                 
                 </tr>
                 
-                <tr>
+                <tr id="7hide">
                 
                         <th id="7-0">7</th>
                 
@@ -881,22 +890,25 @@
                 
                                 <div id="7-5p" class="sell">場</div>     </td>
                 
-                        <td id="7-6" class="a">     <div id="7-6c" class="sell">講義</div> <hr>
+                        <td id="7-6" class="a sat" >     <div id="7-6c" class="sell">講義</div> <hr>
                 
                                 <div id="7-6p" class="sell" >場</div>     </td>
                 
                 </tr>
                </table>
               </div>
-
-            </ons-page>
-            </ons-navigator> 
-
-         
-        </ons-page>
+           
+  </ons-page>
+            </ons-navigator>
+                
+     </ons-page>
 
       </template>
- 
-</body>
+       
+   
 
+        
+                    
+ 
+</body>          
 </html>
