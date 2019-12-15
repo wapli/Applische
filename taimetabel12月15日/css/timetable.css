@@ -1,0 +1,126 @@
+#ons-lecture{
+    width:100%;
+    height:100%;
+}
+
+#table{
+	width:100%;
+    height:100%;
+    border-radius:5px;
+    border-color:black;
+    position: absolute;
+}
+.sell{
+    width:100%;
+	height:40%;
+}
+#ons-lecturePage0{
+    height:100%;
+}
+#nav-lecturePage0{
+    height:100%;
+}
+
+#nav-lecturePageList0{
+    height:100%;
+}
+
+
+
+
+
+
+.cp_actab {
+	position: relative;
+	overflow: auto;
+	width: 100%;
+	margin: 0 auto;
+	color: #ffffff;
+}
+.cp_actab input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.cp_actab label {
+	font-weight: bold;
+	line-height: 3;
+	position: relative;
+	display: block;
+	padding: 0 0 0 4em;
+	cursor: pointer;
+	margin: 0 0 2px 0;
+	background: #50b0e7;
+}
+.cp_actab .cp_actab-content {
+	overflow: auto;
+	max-height: 0;
+	-webkit-transition: max-height 0.35s;
+	transition: max-height 0.35s;
+	color: #333333;
+	background: #c6e5f1;
+}
+.cp_actab .cp_actab-content p {
+	margin: 1em;
+}
+/* :checked */
+.cp_actab input:checked ~ .cp_actab-content {
+	max-height: 20em;
+}
+/* Icon */
+.cp_actab label::after {
+	line-height: 3;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 3em;
+	height: 3em;
+	-webkit-transition: all 0.35s;
+	transition: all 0.35s;
+	text-align: center;
+}
+.cp_actab input[type=checkbox] + label::after {
+	content: '▶';
+}
+.cp_actab input[type=checkbox]:checked + label::after {
+	transform: rotate(90deg);
+}
+.cp_actab-content>button{
+  height:60px;
+  width:100%;
+ text-align:left;
+ font-size:100%;
+ border:solid 0.5px;
+ border-color: #67c5ff;
+}
+.cp_actab-content>button:hover{
+  background-color:mediumturquoise;
+}
+
+
+
+.memoContent{
+    width:50vh;
+    height:5vh;
+    position:relative;
+}
+.memoContent:hover{
+    background-color: khaki;
+}
+
+.memoTable{
+    width:80vh;
+    height:10vh;
+    background-color: rgb(200, 255, 255);
+    position:relative;
+    left: 50vw;
+    top:-10vh;
+}
+
+.saveMemo{
+    position:relative;
+
+}
+
+
