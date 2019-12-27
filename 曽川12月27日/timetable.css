@@ -1,0 +1,108 @@
+#ons-lecture{
+    width:100%;
+    height:100%;
+}
+
+#table{
+    table-layout: fixed;
+    width:100%;
+    max-width: 100%;
+    border-radius:5px;
+    border:black;
+    position: absolute;;
+    text-align: center;
+    border:thin;
+}
+.sell{
+    width:100%;
+    height:100%;
+    
+}
+.a{
+    height:10%;
+    text-overflow: ellipsis;
+    font-size:x-small;
+    -webkit-text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+    background-color: rgb(137, 157, 177);
+}
+.tagP{
+    max-width: 100%;
+    text-overflow: ellipsis;
+    -webkit-text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+}
+
+.day{
+    height:10%;
+    /* width:; */
+    background-color: rgb(255, 255, 255);
+}
+.piriod_num{
+    background-color: rgb(255, 255, 255);
+}
+.piriod_num{
+    width:5%
+}
+
+/* .memoContent{
+    width:50vh;
+    height:5vh;
+    position:relative;
+} */
+
+.memoContent{
+    width:50vh;
+    height:60vh;
+    background-color: rgb(200, 255, 255);
+    position:center;
+    top:0;
+    bottom: 0;
+    right:0;
+    left:0;
+    margin: 0 auto;
+
+}
+.memoContent:hover{
+    background-color: khaki;
+}
+
+.memoTable{
+    width:50vh;
+    height:60vh;
+    background-color: rgb(200, 255, 255);
+    position:center;
+    margin: 0 auto;
+}
+
+.saveMemo{
+    position:relative;
+
+}
+
+.memoContent6{
+    background-color:azure;
+    width:60vw;
+    height:10vh;
+}
+
+.a-1-3{background-color:rgb(250, 185, 201);}
+.a-2-1{background-color:rgb(250, 185, 201);}
+.a-4-4{background-color:rgb(250, 185, 201);}
+.a-1-4{background-color:paleturquoise;}
+.a-3-3{background-color:paleturquoise;}
+.a-4-3{background-color:paleturquoise;}
+.a-3-4{background-color:paleturquoise;}
+.a-3-1{background-color:palegreen;}
+.a-2-4{background-color:palegreen;}
+.a-2-5{background-color:palegreen;}
+.a-4-5{background-color:palegreen;}
+.a-5-5{background-color:palegreen;}
+.a-3-5{background-color:rgb(255, 255, 130);}
+.a-1-6{background-color:khaki;}
+.a-4-2{background-color:khaki;}
+.a-3-2{background-color: rgb(226, 214, 255);}
+.a-2-3{background-color: rgb(226, 214, 255);;}
+
