@@ -20,7 +20,7 @@ document.addEventListener("init", (event) => {
     
   }
   
-  if(page.id == "ons-timetable"){
+  if(page.id == "ons-timetable.html"){
 
     window.fn2 = {};
     
