@@ -58,43 +58,64 @@
               </div>
               </div>
               <div class="cp_actab">
-                <input id="tab-three" type="button" name="tabs" onclick="locateServices(1)">
-                <label for="tab-three">Dokodemoプリント</label>
+                <input id="tab-two" type="button" name="tabs" onclick="locateServices(1)">
+                <label for="tab-two">Dokodemoプリント</label>
                 <div class="cp_actab-content">
                     
                 </div>
               </div>
               <div class="cp_actab">
-                <input id="tab-four" type="button" name="tabs" onclick="locateServices(2)">
-                <label for="tab-four">書面発行機</label>
+                <input id="tab-three" type="button" name="tabs" onclick="locateServices(2)">
+                <label for="tab-three">書面発行機</label>
                 <div class="cp_actab-content">
                     
                 </div>
               </div>
               <div class="cp_actab">
-                <input id="tab-eight" type="button" name="tabs" onclick="locateServices(3)">
-                <label for="tab-eight">コピー機</label>
+                <input id="tab-four" type="button" name="tabs" onclick="locateServices(3)">
+                <label for="tab-four">コピー機</label>
                 <div class="cp_actab-content">
 
                 </div>
               </div>
               <div class="cp_actab">
-                <input id="tab-six" type="button" name="tabs" onclick="locateServices(4)">
-                <label for="tab-six">自動販売機</label>
+                <input id="tab-five type="button" name="tabs" onclick="locateServices(4)">
+                <label for="tab-five">自動販売機</label>
                 <div class="cp_actab-content">
                     
                 </div>
               </div>
               <div class="cp_actab">
-                <input id="tab-seven" type="button" name="tabs" onclick="locateServices(5)">
+                <input id="tab-six" type="button" name="tabs" onclick="locateServices(5)">
                 <label for="tab-six">食事</label>
                 <div class="cp_actab-content">
                     
                 </div>
               </div>
               <div class="cp_actab">
-                <input id="tab-eight" type="button" name="tabs" onclick="locateServices(6)">
-                <label for="tab-eight">PC</label>
+                <input id="tab-seven" type="button" name="tabs" onclick="locateServices(6)">
+                <label for="tab-seven">PC</label>
+                <div class="cp_actab-content">
+
+                </div>
+			  </div>
+			  <!-- <div class="cp_actab">
+                <input id="tab-eight" type="button" name="tabs" onclick="locateServices(7)">
+                <label for="tab-eight">バス停</label>
+                <div class="cp_actab-content">
+
+                </div>
+			  </div>
+			  <div class="cp_actab">
+                <input id="tab-nine" type="button" name="tabs" onclick="locateServices(8)">
+                <label for="tab-nine">ATM</label>
+                <div class="cp_actab-content">
+
+                </div>
+			  </div> -->
+              <div class="cp_actab">
+                <input id="tab-ten" type="button" name="tabs" onclick="locateServices(7)">
+                <label for="tab-ten">AllDelete</label>
                 <div class="cp_actab-content">
 
                 </div>
@@ -169,218 +190,216 @@
         <!-- 各建物情報 -->
         <!-- 図書館情報 -->
         <div class="obj_inf" id="obj_inf0">
-          <h1>ラーネッド記念図書館</h1>
-          <p>
-            <!--開館時間をホームページから盗みたい-->
-            <i class="fas fa-home">　空白</i><br>
-            <i class="fas fa-globe">　<a href=" https://library.doshisha.ac.jp/"> https://library.doshisha.ac.jp/</a></i><br>
-            <!--Wi-Fi情報-->
-            <i class="fas fa-rss">　DO-NET使えます</i> <br>
-            <br>      
-            <a href="https://doors.doshisha.ac.jp/opac/opac_search/?lang=0" class="btn">DOORS </a> 
-
-            <br>      
-            <a href="https://ryoshinkan-lc.doshisha.ac.jp/" class="btn">▼ラーニングコモンズ空席情報はこちら</a> 
-          </p>
-        </div>
-        <!-- ローム情報 -->
-        <div class="obj_inf" id="obj_inf1">
-          <h1>ローム記念館(RM)</h1>
-            <div>
-              <p>
-              <!--開館時間-->
-              <i class="fas fa-home">　8:00~20:00</i><br>
-              <!--ジョアミ情報-->
-              <i class="fas fa-utensils" >　【ジョアミ】<br>　　平日　8:30~18:00<br>　　土曜　8:30～15:00<br>　　閉店　日・祝日</i><br>
-              <!--ロームの電話番号-->
-              <i class="fas fa-phone">　0774-65-7800</i><br>
-              <!--ロームメールアドレス-->
-              <i class="fas fa-paper-plane">　<a href="mailto:jt-rohm@mail.doshisha.ac.jp">jt-rohm@mail.doshisha.ac.jp</a></i><br>
-              <!--ホームぺージ-->
-              <i class="fas fa-globe">　<a href="https://rohm.doshisha.ac.jp/">https://rohm.doshisha.ac.jp/</a></i><br>
-              <!--Wi-Fi状況-->
-              <i class="fas fa-rss">　DO-NET使えます</i> <br>
-              <!-- 折り畳み展開ポインタ -->
-              <div onclick="obj=document.getElementById('open').style; obj.display=(obj.display=='none')?'block':'none';">
-                <a style="cursor:pointer;">▼ローム記念館の詳細はこちら</a>
-              </div>
-              <!--// 折り畳み展開ポインタ -->
-              <!-- 折り畳まれ部分 -->
-              <div id="open" style="display:none;clear:both;">
-                          <!--ここから折りたたまれる内容部分。-->
-                      <p>　ローム株式会社から寄付をもとに建設した「同志社ローム記念館」と、最先端の情報教育環境を備えた正課授業で利用する「情報メディア館」からなる複合施設です。 <br>
-                      </p><p>　「同志社ローム記念館」は、学生・生徒と産業界、地域との連携による様々なプロジェクトを展開するための施設です。<br>
-                      </p><p>　各プロジェクトの活動拠点となるプロジェクトルームを数多備えるだけでなく、グランドフロア吹き抜けは、200インチ大スクリーン、12面大型マルチビジョンを配置したオープンテラス「劇場空間」となっており、コンテンツ制作のためのマルチメディアラウンジやスタジオも配備しています。<br>
-                      </p><p>　プロジェクトのミーティング、行事、展示スペース、成果発表等の目的に応じて自由に活用できる空間となっています。 
-                      </p>
-            </div>
-          </div>
-              <!--// 折り畳まれ部分 -->
-              <br>    
-              <!--マルチメディアの空席情報のページに飛ぶ-->  
-              <a href="http://sakura.doshisha.ac.jp/Ext/EXT_NEW02.aspx?AreaId=02&LocationCd=60400021&MapId=RG" class="btn">マルチメディアラウンジ空席情報はこちら</a>
-        </div>
-        <!-- 嗣業館情報 -->
-        <div class="obj_inf" id="obj_inf2">
-          <h1><ruby>嗣業館<rt>しぎょうかん</rt></ruby></h1>
-          <div onclick="obj=document.getElementById('open5').style; obj.display=(obj.display=='none')?'block':'none';">
-            <u style="cursor:pointer;">▼嗣業館の情報はこちら</u>
-          </div>
-          <div id="open5" style="display:none;clear:both;">
-            <p>留学生課やキャリアセンター、京田辺校地総務課等の事務室機能が集積した施設です。<br>館名は、 旧約聖書詩篇第73章26節<br>「されど神はわがこころの磐（いわ）わがとこしえの嗣業 （ゆずり）なり」<br>に由来します。</p>
-          </div>
-          <br>
-          <i class="fas fa-globe"fa-4x>　<a href="https://ois.doshisha.ac.jp/index.html">▼留学生課のホームページはこちら</a></i><br>
-          <i class="fas fa-globe"fa-4x>　<a href="https://career-center.doshisha.ac.jp/">▼キャリアセンターのホームページはこちら</a></i><br>
-        </div>
-        <!-- 理化学館情報 -->
-        <div class="obj_inf" id="obj_inf3">
-          <h1>理化学館(RG)</h1>
-          <div onclick="obj=document.getElementById('open17').style; obj.display=(obj.display=='none')?'block':'none';">
-            <u style="cursor:pointer;">▼館の情報はこちら</u>
-          </div>
-          <div id="open17" style="display:none;clear:both;">
-            <p>今出川キャンパスにあるハリス理化学館の理念を継いだ理工学部・理工学研究科の拠点施設です。<br>正面玄関上には、J.N.ハリスの言葉"SEEK THROUGH YOUR VOCATION TO SERVE GOD AND HUMANITY"<br>（天職による神と人類への献身）が刻まれています。</p>
-          </div>
-          <a href="https://se.doshisha.ac.jp" class="btn">▼理工学部HPはこちら</a><br>
-          <a href="https://biomedical.doshisha.ac.jp" class="btn">▼生命医科学部HPはこちら</a>
-        </div>
-        <!-- JM情報 -->
-        <div class="obj_inf" id="obj_inf4">
-          <h1>情報メディア館（JM）</h1>
-           <div onclick="obj=document.getElementById('open61').style; obj.display=(obj.display=='none')?'block':'none';">
-              <u style="cursor:pointer;">▼館の情報はこちら</u><br>
-              <a href="http://openpc.doshisha.ac.jp/clv/s/" class="btn">▼PC空席情報はこちら</a> 
-           </div>
-           <div id="open61" style="display:none;clear:both;">
-               <p>      
-              </p>
-           </div>
-        </div>
-        <!-- 夢告館情報 -->
-        <div class="obj_inf" id="obj_inf5">
-          <h1><ruby> 夢告館<rt>むこくかん</rt>（MK）　</ruby></h1>
-          <div onclick="obj=document.getElementById('open52').style; obj.display=(obj.display=='none')?'block':'none';">
-            <u style="cursor:pointer;">▼館の情報はこちら</u><br>
-            <a href="https://www.cis.doshisha.ac.jp" class="btn">▼文化情報学部のHPはこちら</a> 
-          </div>
-          <div id="open52" style="display:none;clear:both;">
-              <p>   
-                    文化情報学部・文化情報学研究科の拠点施設および教室棟で、<br>
-                    新約聖書マタイによる福音書第1章20節「視（み）よ、主の使、夢に現れて言ふ『ダビデの子ヨセフよ、妻マリアを納（い）るる事を恐るな。<br>
-                    その胎に宿る者は聖霊によるなり。』」に由来します。
-            </p>
-          </div>
-        </div>
-        <!-- 日糧館情報 -->
-        <div class="obj_inf" id="obj_inf6">
-          <h1>日糧館</h1>
-          <h2>【京田辺Cafeteria】</h2>
-          <p>
-            <!--開館情報-->
-            <i class="fas fa-utensils">　平日　8:30~14:00<br>　　土曜　8:30～14:00<br>　</i><br>
-            日糧館の二階にあるカフェテリア方式の大型食堂です。座席数は５２５席。
-            <!--ホームぺージ-->
-            <i class="fas fa-globe">　<a href="https://www.doshisha.ac.jp/information/facility/restaurant.html">▼ホームページはこちら</a></i><br>
-          </p>
-          <h2>【カフェテリア　FUJIYA】</h2>
-          <p>
-            <!--開館情報-->
-            <i class="fas fa-utensils">　平日　10:00~15:00<br>　　土曜　10:00～14:00<br>　</i><br>
-            日糧館の一階にあるカフェテリア方式の大型食堂です。座席数は５４８席。
-            <!--ホームぺージ-->
-            <i class="fas fa-globe">　<a href="https://www.doshisha.ac.jp/information/facility/restaurant.html">▼ホームページはこちら</a></i><br>
-          </p>
-          <h2>【カリーハウス】</h2>
-          <p>
-          <!--開館情報-->
-          <i class="fas fa-utensils" >　平日　11:00~14:00<br>　　土曜　10:00~15:00<br>　</i><br>
-          日糧館の一階にあるおいしんボ横丁と呼ばれる食堂専門街です。座席数は４１席。
-          <!--ホームぺージ-->
-          <i class="fas fa-globe">　<a href="https://www.doshisha.ac.jp/information/facility/restaurant.html">▼ホームページはこちら</a></i><br>
-          </p>
-          <h2>【和麺・丼　いも文】</h2>
-          <p>
-          <!--開館情報-->
-          <i class="fas fa-utensils" >　平日　11:00~19:00<br>　　土曜　11:00~14:00<br>　</i><br>
-          日糧館の一階にあるおいしんボ横丁と呼ばれる食堂専門街です。座席数は32席。
-          <!--ホームぺージ-->
-          <i class="fas fa-globe">　<a href="https://www.doshisha.ac.jp/information/facility/restaurant.html">▼ホームページはこちら</a></i><br>
-          </p>
-          <h2>【とんかつ　ふじカツ】</h2>
-          <p>
-          <!--開館情報-->
-          <i class="fas fa-utensils">　平日　11:00~15:00<br>　　土曜　11:00~45:00<br>　</i><br>
-          日糧館の一階にあるおいしんボ横丁と呼ばれる食堂専門街です。座席数は34席。
-          <!--ホームぺージ-->
-          <i class="fas fa-globe">　<a href="https://www.doshisha.ac.jp/information/facility/restaurant.html">▼ホームページはこちら</a></i><br>
-          </p>
-          <h2>【Hamac de Paradis Latte】</h2>
-          <p>
-          <!--開館情報-->
-          <i class="fas fa-utensils">　平日　10:30~20:00（l.o.）<br>　　土曜　11:00~14:00（l.o.）<br>　</i><br>
-          日糧館の一階にあるおいしんボ横丁と呼ばれる食堂専門街です。座席数は120席。
-          <!--ロームの電話番号-->
-          <i class="fas fa-phone">　0774-65-8368</i><br>
-          <!--ホームぺージ-->
-          <i class="fas fa-globe">　<a href="https://www.balnibarbi.com/shops/hamac_latte/">▼ホームページはこちら</a></i><br>
-          </p>
-        </div>
-        <!-- 保健センター情報 -->
-        <div class="obj_inf" id="obj_inf7">
-          <h1>保健センター</h1>
-          <p>
-          <!--開館時間-->
-          <i class="fas fa-home">　月～金<br>　　９：００～１２：００、<br>　　１３：００～１７：００</i><br>
-          ・一般診療　月～金　13：00～16：00<br>
-          （受け付けは15:30まで）<br>
-          ・精神保健相談　火・金　予約制 <br>
-          <i class="fas fa-phone"fa-4x>　0774-65-7390</i><br>
-          <!--ホームぺージ-->
-          <i class="fas fa-globe"fa-4x>　<a href="https://health.doshisha.ac.jp/">▼ホームページはこちらです。</a></i><br>
-          </p>
-        </div>
-        <!-- 紫苑館情報 -->
-        <div class="obj_inf" id="obj_inf8">
-          <h1><ruby>紫苑館<rt>しおんかん</rt></ruby></h1>
-          <p>
-          <!--開館情報-->
-          <i class="fas fa-utensils " >　平日　11:00~20:00<br>　　休日　11:00~19:00<br>　</i><br>
-          カフェテリア方式の大食堂やラウンジといった福利厚生施設です。座席数は７８１席。
-          </p>
-        </div>
-        <!-- デイヴィス記念館情報 -->
-        <div class="obj_inf" id="obj_inf9">
-          <h1>デイヴィス記念館</h1>
-          <div onclick="obj=document.getElementById('open60').style; obj.display=(obj.display=='none')?'block':'none';">
-            <u style="cursor:pointer;">▼館の情報はこちら</u>
-          </div>
-          <div id="open60" style="display:none;clear:both;">
-            <p>   
-              ・開講期間中は月曜～金曜の15時～21時30分、土曜の13時～21時30分 <br>
-              ・試験期間中、夏期・冬期・春期休暇中、日・祝日は9時～21時<br>
-                ・夏期（8月中旬）と冬期（年末年始）は使用不可の期間あり<br>
-              トレーニングルーム<br>
-              【使用日時】<br>
-                ○開講・試験期間 <br>
-                ＜当日使用の場合＞ 　　平日9：00～11：30<br>
-                　ただし、土曜日に使用する場合は前日の金曜日  9：00～11：30に受付 　　（金曜日が休日の場合はその前日）<br>
-              ＜事前予約する場合＞ 　　使用日の前週の金曜日  9：00～11：30（金曜日が休日の場合はその前日） <br>
-              ※教室ダイヤが確定していない時期は貸し出しできない場合がある。<br>
-              月・火・水・金：12：15～20：00 <br>
-              土　曜　日：10：30～18：00 <br>
-              ※木曜日、日曜日、祝日は閉室。<br>
-                ※授業時間割によって変更の可能性がある。<br>
-                詳細はスポーツ支援課事務室前掲示板にて周知する。<br>
-              【申込受付】 <br>
-              ・必ず使用者講習（約1時間）を受講すること。（講習申込は、スポーツ支援課）。<br>
-                ・各講習日とも定員30名、先着順にて受け付ける。<br> 
-              ・講習日程は、スポーツ支援課事務室前掲示板にてお知らせ。<br>
-            </p>
-          </div>
-        </div>
-
-      </div>
+			<h1>ラーネッド記念図書館</h1>
+			<p>
+			  <!--開館時間をホームページから盗みたい-->
+			  <i class="fas fa-home">　空白</i><br>
+			  <i class="fas fa-globe">　<a href=" https://library.doshisha.ac.jp/"> https://library.doshisha.ac.jp/</a></i><br>
+			  <!--Wi-Fi情報-->
+			  <i class="fas fa-rss">　DO-NET使えます</i> <br>
+			  <br>      
+			  <a href="https://doors.doshisha.ac.jp/opac/opac_search/?lang=0" class="btn">DOORS </a> 
+  
+			  <br>      
+			  <a href="https://ryoshinkan-lc.doshisha.ac.jp/" class="btn">▼ラーニングコモンズ空席情報はこちら</a> 
+			</p>
+		</div>
+		<!-- ローム情報 -->
+		<div class="obj_inf" id="obj_inf1">
+		<h1>ローム記念館(RM)</h1>
+			<div>
+			<p>
+			<!--開館時間-->
+			<i class="fas fa-home">　8:00~20:00</i><br>
+			<!--ジョアミ情報-->
+			<i class="fas fa-utensils" >　【ジョアミ】<br>　　平日　8:30~18:00<br>　　土曜　8:30～15:00<br>　　閉店　日・祝日</i><br>
+			<!--ロームの電話番号-->
+			<i class="fas fa-phone">　0774-65-7800</i><br>
+			<!--ロームメールアドレス-->
+			<i class="fas fa-paper-plane">　<a href="mailto:jt-rohm@mail.doshisha.ac.jp">jt-rohm@mail.doshisha.ac.jp</a></i><br>
+			<!--ホームぺージ-->
+			<i class="fas fa-globe">　<a href="https://rohm.doshisha.ac.jp/">https://rohm.doshisha.ac.jp/</a></i><br>
+			<!--Wi-Fi状況-->
+			<i class="fas fa-rss">　DO-NET使えます</i> <br>
+			<!-- 折り畳み展開ポインタ -->
+			<div onclick="obj=document.getElementById('open').style; obj.display=(obj.display=='none')?'block':'none';">
+				<a style="cursor:pointer;">▼ローム記念館の詳細はこちら</a>
+			</div>
+			<!--// 折り畳み展開ポインタ -->
+			<!-- 折り畳まれ部分 -->
+			<div id="open" style="display:none;clear:both;">
+						<!--ここから折りたたまれる内容部分。-->
+					<p>　ローム株式会社から寄付をもとに建設した「同志社ローム記念館」と、最先端の情報教育環境を備えた正課授業で利用する「情報メディア館」からなる複合施設です。 <br>
+					</p><p>　「同志社ローム記念館」は、学生・生徒と産業界、地域との連携による様々なプロジェクトを展開するための施設です。<br>
+					</p><p>　各プロジェクトの活動拠点となるプロジェクトルームを数多備えるだけでなく、グランドフロア吹き抜けは、200インチ大スクリーン、12面大型マルチビジョンを配置したオープンテラス「劇場空間」となっており、コンテンツ制作のためのマルチメディアラウンジやスタジオも配備しています。<br>
+					</p><p>　プロジェクトのミーティング、行事、展示スペース、成果発表等の目的に応じて自由に活用できる空間となっています。 
+					</p>
+			</div>
+		</div>
+			<!--// 折り畳まれ部分 -->
+			<br>    
+			<!--マルチメディアの空席情報のページに飛ぶ-->  
+			<a href="http://sakura.doshisha.ac.jp/Ext/EXT_NEW02.aspx?AreaId=02&LocationCd=60400021&MapId=RG" class="btn">マルチメディアラウンジ空席情報はこちら</a>
+		</div>
+		<!-- 嗣業館情報 -->
+		<div class="obj_inf" id="obj_inf2">
+		<h1><ruby>嗣業館<rt>しぎょうかん</rt></ruby></h1>
+		<div onclick="obj=document.getElementById('open5').style; obj.display=(obj.display=='none')?'block':'none';">
+			<u style="cursor:pointer;">▼嗣業館の情報はこちら</u>
+		</div>
+		<div id="open5" style="display:none;clear:both;">
+			<p>留学生課やキャリアセンター、京田辺校地総務課等の事務室機能が集積した施設です。<br>館名は、 旧約聖書詩篇第73章26節<br>「されど神はわがこころの磐（いわ）わがとこしえの嗣業 （ゆずり）なり」<br>に由来します。</p>
+		</div>
+		<br>
+		<i class="fas fa-globe"fa-4x>　<a href="https://ois.doshisha.ac.jp/index.html">▼留学生課のホームページはこちら</a></i><br>
+		<i class="fas fa-globe"fa-4x>　<a href="https://career-center.doshisha.ac.jp/">▼キャリアセンターのホームページはこちら</a></i><br>
+		</div>
+		<!-- 理化学館情報 -->
+		<div class="obj_inf" id="obj_inf3">
+		<h1>理化学館(RG)</h1>
+		<div onclick="obj=document.getElementById('open17').style; obj.display=(obj.display=='none')?'block':'none';">
+			<u style="cursor:pointer;">▼館の情報はこちら</u>
+		</div>
+		<div id="open17" style="display:none;clear:both;">
+			<p>今出川キャンパスにあるハリス理化学館の理念を継いだ理工学部・理工学研究科の拠点施設です。<br>正面玄関上には、J.N.ハリスの言葉"SEEK THROUGH YOUR VOCATION TO SERVE GOD AND HUMANITY"<br>（天職による神と人類への献身）が刻まれています。</p>
+		</div>
+		<a href="https://se.doshisha.ac.jp" class="btn">▼理工学部HPはこちら</a><br>
+		<a href="https://biomedical.doshisha.ac.jp" class="btn">▼生命医科学部HPはこちら</a>
+		</div>
+		<!-- JM情報 -->
+		<div class="obj_inf" id="obj_inf4">
+		<h1>情報メディア館（JM）</h1>
+			<div onclick="obj=document.getElementById('open61').style; obj.display=(obj.display=='none')?'block':'none';">
+			<u style="cursor:pointer;">▼館の情報はこちら</u><br>
+			<a href="http://openpc.doshisha.ac.jp/clv/s/" class="btn">▼PC空席情報はこちら</a> 
+			</div>
+			<div id="open61" style="display:none;clear:both;">
+				<p>      
+			</p>
+			</div>
+		</div>
+		<!-- 夢告館情報 -->
+		<div class="obj_inf" id="obj_inf5">
+		<h1><ruby> 夢告館<rt>むこくかん</rt>（MK）　</ruby></h1>
+		<div onclick="obj=document.getElementById('open52').style; obj.display=(obj.display=='none')?'block':'none';">
+			<u style="cursor:pointer;">▼館の情報はこちら</u><br>
+			<a href="https://www.cis.doshisha.ac.jp" class="btn">▼文化情報学部のHPはこちら</a> 
+		</div>
+		<div id="open52" style="display:none;clear:both;">
+			<p>   
+					文化情報学部・文化情報学研究科の拠点施設および教室棟で、<br>
+					新約聖書マタイによる福音書第1章20節「視（み）よ、主の使、夢に現れて言ふ『ダビデの子ヨセフよ、妻マリアを納（い）るる事を恐るな。<br>
+					その胎に宿る者は聖霊によるなり。』」に由来します。
+			</p>
+		</div>
+		</div>
+		<!-- 日糧館情報 -->
+		<div class="obj_inf" id="obj_inf6">
+		<h1>日糧館</h1>
+		<h2>【京田辺Cafeteria】</h2>
+		<p>
+			<!--開館情報-->
+			<i class="fas fa-utensils">　平日　8:30~14:00<br>　　土曜　8:30～14:00<br>　</i><br>
+			日糧館の二階にあるカフェテリア方式の大型食堂です。座席数は５２５席。
+			<!--ホームぺージ-->
+			<i class="fas fa-globe">　<a href="https://www.doshisha.ac.jp/information/facility/restaurant.html">▼ホームページはこちら</a></i><br>
+		</p>
+		<h2>【カフェテリア　FUJIYA】</h2>
+		<p>
+			<!--開館情報-->
+			<i class="fas fa-utensils">　平日　10:00~15:00<br>　　土曜　10:00～14:00<br>　</i><br>
+			日糧館の一階にあるカフェテリア方式の大型食堂です。座席数は５４８席。
+			<!--ホームぺージ-->
+			<i class="fas fa-globe">　<a href="https://www.doshisha.ac.jp/information/facility/restaurant.html">▼ホームページはこちら</a></i><br>
+		</p>
+		<h2>【カリーハウス】</h2>
+		<p>
+		<!--開館情報-->
+		<i class="fas fa-utensils" >　平日　11:00~14:00<br>　　土曜　10:00~15:00<br>　</i><br>
+		日糧館の一階にあるおいしんボ横丁と呼ばれる食堂専門街です。座席数は４１席。
+		<!--ホームぺージ-->
+		<i class="fas fa-globe">　<a href="https://www.doshisha.ac.jp/information/facility/restaurant.html">▼ホームページはこちら</a></i><br>
+		</p>
+		<h2>【和麺・丼　いも文】</h2>
+		<p>
+		<!--開館情報-->
+		<i class="fas fa-utensils" >　平日　11:00~19:00<br>　　土曜　11:00~14:00<br>　</i><br>
+		日糧館の一階にあるおいしんボ横丁と呼ばれる食堂専門街です。座席数は32席。
+		<!--ホームぺージ-->
+		<i class="fas fa-globe">　<a href="https://www.doshisha.ac.jp/information/facility/restaurant.html">▼ホームページはこちら</a></i><br>
+		</p>
+		<h2>【とんかつ　ふじカツ】</h2>
+		<p>
+		<!--開館情報-->
+		<i class="fas fa-utensils">　平日　11:00~15:00<br>　　土曜　11:00~45:00<br>　</i><br>
+		日糧館の一階にあるおいしんボ横丁と呼ばれる食堂専門街です。座席数は34席。
+		<!--ホームぺージ-->
+		<i class="fas fa-globe">　<a href="https://www.doshisha.ac.jp/information/facility/restaurant.html">▼ホームページはこちら</a></i><br>
+		</p>
+		<h2>【Hamac de Paradis Latte】</h2>
+		<p>
+		<!--開館情報-->
+		<i class="fas fa-utensils">　平日　10:30~20:00（l.o.）<br>　　土曜　11:00~14:00（l.o.）<br>　</i><br>
+		日糧館の一階にあるおいしんボ横丁と呼ばれる食堂専門街です。座席数は120席。
+		<!--ロームの電話番号-->
+		<i class="fas fa-phone">　0774-65-8368</i><br>
+		<!--ホームぺージ-->
+		<i class="fas fa-globe">　<a href="https://www.balnibarbi.com/shops/hamac_latte/">▼ホームページはこちら</a></i><br>
+		</p>
+		</div>
+		<!-- 保健センター情報 -->
+		<div class="obj_inf" id="obj_inf7">
+		<h1>保健センター</h1>
+		<p>
+		<!--開館時間-->
+		<i class="fas fa-home">　月～金<br>　　９：００～１２：００、<br>　　１３：００～１７：００</i><br>
+		・一般診療　月～金　13：00～16：00<br>
+		（受け付けは15:30まで）<br>
+		・精神保健相談　火・金　予約制 <br>
+		<i class="fas fa-phone"fa-4x>　0774-65-7390</i><br>
+		<!--ホームぺージ-->
+		<i class="fas fa-globe"fa-4x>　<a href="https://health.doshisha.ac.jp/">▼ホームページはこちらです。</a></i><br>
+		</p>
+		</div>
+		<!-- 紫苑館情報 -->
+		<div class="obj_inf" id="obj_inf8">
+		<h1><ruby>紫苑館<rt>しおんかん</rt></ruby></h1>
+		<p>
+		<!--開館情報-->
+		<i class="fas fa-utensils " >　平日　11:00~20:00<br>　　休日　11:00~19:00<br>　</i><br>
+		カフェテリア方式の大食堂やラウンジといった福利厚生施設です。座席数は７８１席。
+		</p>
+		</div>
+		<!-- デイヴィス記念館情報 -->
+		<div class="obj_inf" id="obj_inf9">
+		<h1>デイヴィス記念館</h1>
+		<div onclick="obj=document.getElementById('open60').style; obj.display=(obj.display=='none')?'block':'none';">
+			<u style="cursor:pointer;">▼館の情報はこちら</u>
+		</div>
+		<div id="open60" style="display:none;clear:both;">
+			<p>   
+			・開講期間中は月曜～金曜の15時～21時30分、土曜の13時～21時30分 <br>
+			・試験期間中、夏期・冬期・春期休暇中、日・祝日は9時～21時<br>
+				・夏期（8月中旬）と冬期（年末年始）は使用不可の期間あり<br>
+			トレーニングルーム<br>
+			【使用日時】<br>
+				○開講・試験期間 <br>
+				＜当日使用の場合＞ 　　平日9：00～11：30<br>
+				　ただし、土曜日に使用する場合は前日の金曜日  9：00～11：30に受付 　　（金曜日が休日の場合はその前日）<br>
+			＜事前予約する場合＞ 　　使用日の前週の金曜日  9：00～11：30（金曜日が休日の場合はその前日） <br>
+			※教室ダイヤが確定していない時期は貸し出しできない場合がある。<br>
+			月・火・水・金：12：15～20：00 <br>
+			土　曜　日：10：30～18：00 <br>
+			※木曜日、日曜日、祝日は閉室。<br>
+				※授業時間割によって変更の可能性がある。<br>
+				詳細はスポーツ支援課事務室前掲示板にて周知する。<br>
+			【申込受付】 <br>
+			・必ず使用者講習（約1時間）を受講すること。（講習申込は、スポーツ支援課）。<br>
+				・各講習日とも定員30名、先着順にて受け付ける。<br> 
+			・講習日程は、スポーツ支援課事務室前掲示板にてお知らせ。<br>
+			</p>
+		</div>
+		</div>
 
     </ons-page>
   </template>
