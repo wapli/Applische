@@ -10,8 +10,8 @@ document.addEventListener("init", function(event){
         else if(ua.indexOf('Android') > 0){
             alert("Android");
             var map = document.getElementById("mapImage");
-            map.style.width = window.innerWidth;
-            map.style.height = window.innerHeight;
+            map.style.width = "50vw";
+            map.style.height = "50vh";
         }
     }
 
