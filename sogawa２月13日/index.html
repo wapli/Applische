@@ -9,6 +9,7 @@
 		  <link rel="stylesheet" type="text/css" href="lib/onsenui/css/onsenui.css">
 		  <link rel="stylesheet" type="text/css" href="lib/onsenui/css/onsen-css-components.css">
 		  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+		  <link rel="stylesheet" href="css/home.css">
 		  <link rel="stylesheet" href="css/map.css">
 		  <link rel="stylesheet" type="text/css" href="css/timetable.css">
 	
@@ -18,12 +19,13 @@
 		 <script type="text/javascript" src="lib/jquery.js"></script>
 		 <script type="text/javascript" src="lib/onsenui/js/onsenui.js"></script>
 		 <script type="text/javascript" src="js/splitter.js"></script>
-			 <script type="text/javascript" src="js/hidePeriod.js"></script>
+		 <script type="text/javascript" src="js/hidePeriod.js"></script>
 		 <script type="text/javascript" src="js/timetable.js"></script>
 		 <script type="text/javascript" src="js/clearData.js"></script>
 		 <script type="text/javascript" src="js/zoom.js"></script>
 		 <script type="text/javascript" src="js/openInf.js"></script>
 		 <script type="text/javascript" src="js/closeInf.js"></script>
+		 <script type="text/javascript" src="js/changeInf.js"></script>
 		 <script type="text/javascript" src="js/locateServices.js"></script>
 </head>
 <body>
@@ -37,23 +39,34 @@
 		</ons-page>
 		<template id="home.html">
 			<ons-page id="ons-home">
-				<!--曽川-->
-					<div class="divHomeButton">
+				<ons-toolbar>
+					<div class="left">
+						<img src="imgs/wapliIcon.png" id="wIcon">
+						<span id="title">WAPLI</span><br><span id="sub_title">同志社大学ローム記念館プロジェクト</span>
+					</div>
+					<div class="center">
+						
+					</div>
+					<div class="right" style="margin: -12px;">
+					  
+					</div>
+				  </ons-toolbar>
+				
+				<div class="divHomeButton">
 					<a id="doshishaHP" class="homeButton reset button-arrow-inner-thin"  href="https://www.doshisha.ac.jp/students/index.html">同志社大学HP</a>
 				</div>
 				<div class="divHomeButton">
 					<a id="DOORs" class="homeButton reset button-arrow-inner-thin" href="https://doors.doshisha.ac.jp/opac/opac_search/">ＤＯＯＲｓ</a>
 				</div>
 				<div class="divHomeButton">
-					<a id="WebSignOn" class="homeButton reset button-arrow-inner-thin" href="https://sso.doshisha.ac.jp/cgi-bin/index.cgi?GASF=IG.GRID,UserPassword,IG.OTP&GAREASONCODE=-1&GARESOURCEID=resource0005&GAURI=https://sso.doshisha.ac.jp:443/cgi%2Dbin/portal.cgi&Reason=-1&APPID=resource0005&URI=https://sso.doshisha.ac.jp:443/cgi%2Dbin/portal.cgi
-					">Webシングルサインオン</a>
+					<a id="WebSignOn" class="homeButton reset button-arrow-inner-thin" href="https://sso.doshisha.ac.jp/cgi-bin/index.cgi?GASF=IG.GRID,UserPassword,IG.OTP&GAREASONCODE=-1&GARESOURCEID=resource0005&GAURI=https://sso.doshisha.ac.jp:443/cgi%2Dbin/portal.cgi&Reason=-1&APPID=resource0005&URI=https://sso.doshisha.ac.jp:443/cgi%2Dbin/portal.cgi">Webシングルサインオン</a>
 				</div>
 				<div class="divHomeButton">
 					<a id="doshishaCalendar" class="homeButton reset button-arrow-inner-thin" href="https://www.doshisha.ac.jp/students/schedule/calendar_undergrad.html">同志社カレンダー</a>
 				</div>
-				<!--曽川ここまで-->
+				
 			  </ons-page>
-		</template>
+			</template>
 
 		
 <!-- ここからマップ -->
@@ -95,7 +108,7 @@
                 </div>
               </div>
               <div class="cp_actab">
-                <input id="tab-five type="button" name="tabs" onclick="locateServices(4)">
+                <input id="tab-five" type="button" name="tabs" onclick="locateServices(4)">
                 <label for="tab-five">自動販売機</label>
                 <div class="cp_actab-content">
                     
@@ -142,9 +155,9 @@
       </ons-splitter>
       <!--ここまで左端のメニュー-->
     </ons-page>
-  </template>
+  	</template>
 
-  <template id="page-top.html">
+  	<template id="page-top.html">
     <ons-page id="page-top">
       <ons-toolbar>
         <div class="left">
@@ -155,7 +168,7 @@
         <div class="center">
         
         </div>
-        <div class="right">
+        <div class="right" style="margin: -12px;">
           <ons-button id="zoomin">+</ons-button>
           <ons-button id="zoomout">-</ons-button>
         </div>
@@ -164,23 +177,24 @@
       <div id="map">
         <img id="mapImage" src="imgs/kyotanabeMap.png">
 
-        <!-- 各種マップピン -->
-        <img class="pin" id="libraryPin" src="imgs/_i_icon_00140_icon_001400_256.png">
-        <img class="pin" id="rohmPin" src="imgs/_i_icon_00140_icon_001400_256.png">
-        <img class="pin" id="shigyoPin" src="imgs/_i_icon_00140_icon_001400_256.png">
-        <img class="pin" id="rikagakuPin" src="imgs/_i_icon_00140_icon_001400_256.png">
-        <img class="pin" id="jmPin" src="imgs/_i_icon_00140_icon_001400_256.png">
-        <img class="pin" id="mkPin" src="imgs/_i_icon_00140_icon_001400_256.png">
-        <img class="pin" id="nichiryoPin" src="imgs/_i_icon_00140_icon_001400_256.png">
-        <img class="pin" id="hokenPin" src="imgs/_i_icon_00140_icon_001400_256.png">
-        <img class="pin" id="shionPin" src="imgs/_i_icon_00140_icon_001400_256.png">
-        <img class="pin" id="davisPin" src="imgs/_i_icon_00140_icon_001400_256.png">
-        <img class="pin" id="seishinPin" src="imgs/_i_icon_00140_icon_001400_256.png">
-        <img class="pin" id="vend1Pin" src="imgs/_i_icon_00140_icon_001400_256.png">
-        <img class="pin" id="vend2Pin" src="imgs/_i_icon_00140_icon_001400_256.png">
-        <img class="pin" id="kdPin" src="imgs/_i_icon_00140_icon_001400_256.png">
+        <!-- 各マップピン -->
+        <img class="pin" id="libraryPin" src="imgs/mapPin.png">
+        <img class="pin" id="rohmPin" src="imgs/mapPin.png">
+        <img class="pin" id="shigyoPin" src="imgs/mapPin.png">
+        <img class="pin" id="rikagakuPin" src="imgs/mapPin.png">
+        <img class="pin" id="jmPin" src="imgs/mapPin.png">
+        <img class="pin" id="mkPin" src="imgs/mapPin.png">
+        <img class="pin" id="nichiryoPin" src="imgs/mapPin.png">
+        <img class="pin" id="hokenPin" src="imgs/mapPin.png">
+        <img class="pin" id="shionPin" src="imgs/mapPin.png">
+        <img class="pin" id="davisPin" src="imgs/mapPin.png">
+        <img class="pin" id="seishinPin" src="imgs/mapPin.png">
+        <img class="pin" id="vend1Pin" src="imgs/mapPin.png">
+        <img class="pin" id="vend2Pin" src="imgs/mapPin.png">
+        <img class="pin" id="kdPin" src="imgs/mapPin.png">
 
 
+		<!-- 各建物ボタン -->
         <!-- 図書館 -->
         <ons-button class="obj" id="obj0" onclick="openInf(0)"></ons-button>
         <!-- ローム -->
@@ -209,11 +223,11 @@
 			<h1>ラーネッド記念図書館</h1>
 			<p>
 			  <!--開館時間をホームページから盗みたい-->
-			  <i class="fas fa-home">　空白</i><br>
-			  <i class="fas fa-globe">　<a href=" https://library.doshisha.ac.jp/"> https://library.doshisha.ac.jp/</a></i><br>
+			  <i class="fas fa-home" id="lib_time"></i><br>
+			  <i class="fas fa-globe">　<a id="lib_page" href="https://library.doshisha.ac.jp/" target="_blank"> https://library.doshisha.ac.jp/</a></i><br>
 			  <!--Wi-Fi情報-->
 			  <i class="fas fa-rss">　DO-NET使えます</i> <br>
-			  <br>      
+			  <br>     
 			  <a href="https://doors.doshisha.ac.jp/opac/opac_search/?lang=0" class="btn">DOORS </a> 
   
 			  <br>      
@@ -418,7 +432,7 @@
 		</div>
 
     </ons-page>
-  </template>
+  	</template>
 <!--ここまでマップ  -->
 
 		
