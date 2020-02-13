@@ -1,7 +1,7 @@
-//ver1.1 onclickの実装をaddEventListenerの実装に変更しました.
+//ver1.1 画像位置を中心に初期化したいけど未だ出来ない
 
 //拡大倍率（グローバル変数）
-var ratio=1;
+var ratio=1.0;
 
 document.addEventListener('init', (event) => {
     var page =event.target;
@@ -14,10 +14,17 @@ document.addEventListener('init', (event) => {
         //建物の集合と建物情報の集合をそれぞれ取得
         let objs = document.getElementsByClassName("obj");
         let objInfs = document.getElementsByClassName("obj_inf");
+        // 拡大倍率100%で初期化
+        map.style.width=String(ratio*100)+"vw";
+        map.style.height=String(ratio*100)+"vh";
+        mapImage.style.width=String(ratio*100)+"vw";
+        mapImage.style.height=String(ratio*100)+"vh";
+        //画像位置を中心に初期化
+        
 
         //拡大機能
         document.getElementById("zoomin").addEventListener("click", function(){
-            ratio *= 1.1;
+            ratio = ratio + (ratio * 0.1);
             console.log("Increased ratio:"+ratio);
 
             //マップ領域とマップ画像の拡大
@@ -28,9 +35,9 @@ document.addEventListener('init', (event) => {
             console.log("mapWidth:"+map.style.width);
             console.log("mapImageWidth:"+mapImage.style.width);
 
-            //拡大倍率の最大値を2.5に上書き調整
-            if(ratio>2.5){
-                ratio=2.5;
+            //拡大倍率の最大値を3.5にする
+            if(ratio>3.5){
+                ratio=3.5;
                 map.style.width=String(ratio*100)+"vw";
                 map.style.height=String(ratio*100)+"vh";
                 mapImage.style.width=String(ratio*100)+"vw";
@@ -40,7 +47,7 @@ document.addEventListener('init', (event) => {
 
         //縮小機能
         document.getElementById("zoomout").addEventListener("click", function(){
-            ratio *= 0.9;
+            ratio = ratio - (ratio * 0.1);
             console.log("Decreased ratio:"+ratio);
 
             //マップ領域とマップ画像の縮小
@@ -51,7 +58,7 @@ document.addEventListener('init', (event) => {
             console.log("mapWidth:"+map.style.width);
             console.log("mapImageWidth:"+mapImage.style.width);
 
-            //拡大倍率の最小値を1に上書き調整
+            //拡大倍率の最小値を1にする
             if(ratio<1){
                 ratio=1;
                 map.style.width=String(ratio*100)+"vw";
@@ -66,5 +73,6 @@ document.addEventListener('init', (event) => {
                 }
             }
         }, false);
+
     }
 },false);
