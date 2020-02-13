@@ -1,4 +1,4 @@
-//ver1.0 マップ機能内で建物情報を提示する機能
+//ver1.1 マップ機能内で建物情報を提示する機能
 
 //建物の集合と建物情報の集合をそれぞれ取得
 var objs = document.getElementsByClassName("obj");
@@ -12,8 +12,8 @@ document.addEventListener('init', function(event){
             objs[i].addEventListener("click", function(){
                 console.log("obj"+i+" was clicked.");
 
-                //拡大倍率1.7倍以上の場合のみ、吹き出しを表示
-                if(ratio>=1.7){
+                //拡大倍率ratioが2倍以上の場合のみ、吹き出しを表示
+                if(ratio>=2){
                     console.log("possible to open information.");
                     objInfs[i].style.display="block";
                 }
@@ -40,8 +40,8 @@ function openInf(num)
         objInfs[i].style.display="none";
     }
 
-    //拡大倍率1.7倍以上の場合のみ、吹き出しを表示
-    if(ratio>=1.7){
+    //拡大倍率ratioが2倍以上の場合のみ、吹き出しを表示
+    if(ratio>=2){
         console.log("possible to open Information.");
         objInfs[num].style.display="block";
     }
