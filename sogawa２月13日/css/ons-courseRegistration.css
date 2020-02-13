@@ -1,0 +1,14 @@
+.inputLecture{
+    margin-right : 50px;
+}
+.search{
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+.result{
+      padding: 1em 10px 1em 1em;
+      border-right: 1px solid rgb(39, 38, 38);
+}
+    
