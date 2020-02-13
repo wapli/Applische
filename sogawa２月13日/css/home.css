@@ -1,0 +1,87 @@
+/*ホームページここから----------------------------------------------------------曽川ここから下すべて追加です*/
+    #doshishaHP {
+		display: block;
+		padding: 7px 0;
+		text-align: center;
+    }
+    #topbar{
+        width: 100vw;
+        height: 10vh;
+        background-color:white;
+    }
+    #wIcon{
+        width: 120px;
+        height: 60px;
+        margin-top: -20px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    #title{
+        position: absolute;
+        font-size: x-large;
+        color:black;
+        top:22px;
+        left: 55%;
+    }
+    #sub_title{
+        position: absolute;
+        text-align: center;
+        font-size:medium;
+        color:black;
+        top:-2px;
+        left: 33%;
+    }
+	/* マウスホバー時のカラー*/
+	
+	.button-arrow-inner-thin {
+	text-align: center;
+	box-sizing: border-box;
+	display: block;
+	background: purple;
+	border-bottom: 2px solid rgba(0,0,0,0.3);
+	color: #fff;
+	font-weight: bold;
+	padding: 0.8em;
+	line-height: 1.4;
+	max-width: 300px;
+	width: 100%;
+	margin: 10% auto;
+	position: relative;
+	}
+	.button-arrow-inner-thin::after, .button-arrow-inner-thin::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 12px;
+	opacity: 0;
+	transition: opacity 0.3s, transform 0.3s;
+	}
+	.button-arrow-inner-thin::after {
+	width: 10px;
+	height: 10px;
+	margin-top: -5px;
+	transform: translate(-300px) rotate(45deg);
+	border-top: 1px solid #fff;
+	}
+	.button-arrow-inner-thin::before {
+	width: 40px;
+	height: 1px;
+	margin-right: -2px;
+	background: #fff;
+	transform: translate(-300px);
+	}
+	.button-arrow-inner-thin:hover::after, .button-arrow-inner-thin:hover::before {
+	opacity: 1;
+	}
+	.button-arrow-inner-thin:hover::after {
+	transform: translate(0) rotate(45deg);
+	}
+	.button-arrow-inner-thin:hover::before {
+	transform: translate(0);
+	}
+	.button-arrow-inner-thin:active, .button-arrow-inner-thin:focus {
+	opacity: 0.8;
+	border-bottom-color: transparent;
+	}
+	/*ホームページここまで----------------------------------------------------------*/
