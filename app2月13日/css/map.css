@@ -8,6 +8,18 @@
 }
 /*マップ画像の設定*/
 
+/* ズームボタンの設定 */
+#zoomin{
+  font-size: x-large;
+  padding: 9px;
+  text-align: center;
+}
+#zoomout{
+  font-size: x-large;
+  padding: 9px;
+  text-align: center;
+}
+/* ズームボタンの設定 */
 
 /*各建物と各建物情報の設定*/
 .obj{ 
@@ -37,51 +49,51 @@
 /* obj0：図書館 */
 #obj0{
   top:73%; /* %：親要素を基準とした長さの単位 */
-  left:32%;
-  width:100px;
-  height:50px;
+  left:33%;
+  width:130px;
+  height:70px;
 }
 /* obj1：ローム */
 #obj1{
   top:81%;
   left:48%;
-  width:144px;
-  height:50px;
+  width:185px;
+  height:70px;
 }
 /* obj2：嗣業館*/
 #obj2{
-  top:78%;
-  left:25%;
-  width:50px;
-  height:95px;
+  top:79%;
+  left:26%;
+  width:60px;
+  height:96px;
 }
 /* obj3：理化学館 */
 #obj3{
-  top:61%;
+  top:62%;
   left:47%;
-  width:115px;
-  height:60px;
+  width:165px;
+  height:65px;
 }
 /* obj4：JM */
 #obj4{
   top:79%;
   left:62%;
-  width:55px;
-  height:95px;
+  width:80px;
+  height:115px;
 }
 /* 夢告館 */
 #obj5{
-  top:75%;
+  top:77%;
   left:48%;
-  width:115px;
-  height:70px;
+  width:135px;
+  height:80px;
 }
 /* 日糧館 */
 #obj6{
   top:62%;
-  left:30%;
-  width:50px;
-  height:135px;
+  left:31%;
+  width:60px;
+  height:180px;
 }
 /* 日糧館は情報量多いので、吹き出し枠の高さを制限 */
 #obj_inf6{
@@ -91,22 +103,22 @@
 #obj7{
   top:78%;
   left:18%;
-  width:50px;
-  height:50px;
+  width:60px;
+  height:60px;
 }
 /* 紫苑館 */
 #obj8{
   top:55%;
   left:31%;
-  width:100px;
-  height:100px;
+  width:140px;
+  height:140px;
 }
 /* デイヴィス記念館 */
 #obj9{
-  top:40%;
-  left:40%;
-  width:100px;
-  height:50px;
+  top:39%;
+  left:41%;
+  width:118px;
+  height:100px;
 }
 /* 成心館 */
 #obj10{
